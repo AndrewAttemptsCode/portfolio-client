@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import BurgerMenu from "./BurgerMenu";
 
 const HeaderStyle = styled.header`
   padding: 1rem 0;
@@ -7,14 +8,15 @@ const HeaderStyle = styled.header`
 const ResponsiveContainer = styled.div`
   width: min(80%, 1280px);
   margin: 0 auto;
+  position: relative;
 `
 
 const Header = () => {
   return (
     <HeaderStyle>
       <ResponsiveContainer>
-        {/* burger menu
-        logo
+        <BurgerMenu />
+        {/* logo
         nav
         themetoggle */}
       </ResponsiveContainer>
