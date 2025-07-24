@@ -49,7 +49,7 @@ const BurgerMenu = ({menuOpen, setIsMenuOpen}) => {
       aria-label="Toggle Navigation"
       aria-expanded={menuOpen}
     >
-      <ButtonContent $open={menuOpen} />
+      <ButtonContent $menuOpen={menuOpen} />
     </StyledButton>
   );
 };
