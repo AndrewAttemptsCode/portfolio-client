@@ -1,6 +1,6 @@
 :root {
-  --bg-color: rgb(249, 249, 249);
-  --primary-font-color: rgb(33, 37, 41);
+  --bg-color: 249, 249, 249;
+  --primary-font-color: 33, 37, 41;
 }
 
 * {
@@ -12,8 +12,8 @@ body {
   line-height: 1.5;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: var(--bg-color);
-  color: var(--primary-font-color);
+  background: rgb(var(--bg-color));
+  color: rgb(var(--primary-font-color));
 }
 
 img, picture, video, canvas, svg {
