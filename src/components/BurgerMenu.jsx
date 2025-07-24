@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 const StyledButton = styled.button`
-  position: absolute;
-  left: 0;
-  transform: translateY(-50%);
   height: 2rem;
   aspect-ratio: 1 / 1;
   padding: 0.1rem;

@@ -11,6 +11,9 @@ const ResponsiveContainer = styled.div`
   width: min(80%, 1280px);
   margin: 0 auto;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `
 
 const Header = () => {
