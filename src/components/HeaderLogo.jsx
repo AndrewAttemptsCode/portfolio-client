@@ -11,6 +11,8 @@ const Container = styled.div`
     line-height: 1;
     margin: 0;
     padding: 0;
+    opacity: ${({$fadeIn}) => ($fadeIn ? 1 : 0)};
+    transition: opacity 1s ease;
   }
 `
 
@@ -22,28 +24,31 @@ const StyledSpan = styled.span`
   display: inline-block;
   min-width: 6ch;
   color: rgba(var(--primary-font-color), 0.7);
-  transform: ${({$animate}) => ($animate ? "translateX(0%)" : "translateX(-100%)")};
+  transform: ${({$slideIn}) => ($slideIn ? "translateX(0%)" : "translateX(-100%)")};
   transition: transform 0.3s ease;
 `
 
 const HeaderLogo = () => {
-  const [animate, setAnimate] = useState(false);
+  const [fadeIn, setFadeIn] = useState(false);
+  const [slideIn, setSlideIn] = useState(false);
 
   useEffect(() => {
 
+    setFadeIn(true);
+
     const timeout = setTimeout(() => {
-      setAnimate(true);
-    }, 300);
+      setSlideIn(true);
+    }, 1000);
 
     return () => clearTimeout(timeout);
 
   }, []);
 
   return (
-    <Container>
+    <Container $fadeIn={fadeIn}>
       <h1>Andrew 
         <AnimationContainer>
-          <StyledSpan $animate={animate}>Travis</StyledSpan>
+          <StyledSpan $slideIn={slideIn}>Travis</StyledSpan>
         </AnimationContainer>
       </h1>
     </Container>
