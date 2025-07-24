@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Nav = styled.nav`
-  position: fixed;
-  left: 0;
-  top: 34px;
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 1rem);
   z-index: 5;
   background: var(--bg-color);
-  width: 100dvw;
+  width: 100vw;
   padding: 1rem;
   text-align: center;
   transform-origin: top;
-  transform: ${({$menuOpen}) => ($menuOpen ? "translateY(0%)" : "translateY(-150%)")};
+  transform: ${({$menuOpen}) => ($menuOpen ? "translate(-50%, 0%)" : "translate(-50%, -150%)")};
   transition: transform 0.3s ease;
 
   ul {
