@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import BurgerMenu from "./BurgerMenu";
 import NavBar from "./NavBar";
+import HeaderLogo from "./HeaderLogo";
 
 const HeaderStyle = styled.header`
   padding: 1rem 0;
@@ -23,9 +24,9 @@ const Header = () => {
     <HeaderStyle>
       <ResponsiveContainer>
         <BurgerMenu menuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        <HeaderLogo />
         <NavBar menuOpen={isMenuOpen} closeMenu={() => setIsMenuOpen(false)} />
-        {/* logo
-        themetoggle */}
+        {/* themetoggle */}
       </ResponsiveContainer>
     </HeaderStyle>
   );
