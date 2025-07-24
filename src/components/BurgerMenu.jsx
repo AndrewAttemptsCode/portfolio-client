@@ -1,6 +1,4 @@
-import { useState } from "react";
 import styled from "styled-components";
-import NavBar from "./NavBar";
 
 const StyledButton = styled.button`
   position: absolute;
@@ -22,7 +20,7 @@ const ButtonContent = styled.div`
   position: relative;
   user-select: none;
   height: 2px;
-  background: ${({$open}) => ($open ? "transparent" : "var(--primary-font-color)")}; 
+  background: ${({$menuOpen}) => ($menuOpen ? "transparent" : "var(--primary-font-color)")}; 
   transition: background 0.3 ease;
 
   &::before,
@@ -38,29 +36,24 @@ const ButtonContent = styled.div`
   }
 
   &::before {
-    transform: ${({$open}) => ($open ? "rotate(45deg)" : "translateY(-6px)")};
+    transform: ${({$menuOpen}) => ($menuOpen ? "rotate(45deg)" : "translateY(-6px)")};
   }
 
   &::after {
-    transform: ${({$open}) => ($open ? "rotate(-45deg)" : "translateY(6px)")};
+    transform: ${({$menuOpen}) => ($menuOpen ? "rotate(-45deg)" : "translateY(6px)")};
   }
 `
 
-const BurgerMenu = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const BurgerMenu = ({menuOpen, setIsMenuOpen}) => {
+  
   return (
-    <>
-      <StyledButton
-        onClick={() => setIsOpen(prev => !prev)}
-        aria-label="Toggle Navigation"
-        aria-expanded={isOpen}
-      >
-        <ButtonContent $open={isOpen} />
-      </StyledButton>
-      {/* use mobile mode here */}
-      <NavBar open={isOpen} closeMenu={() => setIsOpen(false)} />
-    </>
+    <StyledButton
+      onClick={() => setIsMenuOpen(prev => !prev)}
+      aria-label="Toggle Navigation"
+      aria-expanded={menuOpen}
+    >
+      <ButtonContent $open={menuOpen} />
+    </StyledButton>
   );
 };
 

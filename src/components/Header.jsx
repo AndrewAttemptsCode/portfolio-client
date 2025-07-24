@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 import BurgerMenu from "./BurgerMenu";
 import NavBar from "./NavBar";
@@ -13,12 +14,13 @@ const ResponsiveContainer = styled.div`
 `
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <HeaderStyle>
       <ResponsiveContainer>
-        <BurgerMenu />
-        {/* need nav to work in desktop, use mode on nav and a container */}
-        {/* <NavBar /> */}
+        <BurgerMenu menuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        <NavBar menuOpen={isMenuOpen} closeMenu={() => setIsMenuOpen(false)} />
         {/* logo
         themetoggle */}
       </ResponsiveContainer>

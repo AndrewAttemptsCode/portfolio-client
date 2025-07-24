@@ -11,7 +11,7 @@ const Nav = styled.nav`
   padding: 1rem;
   text-align: center;
   transform-origin: top;
-  transform: ${({$open}) => ($open ? "translateY(0%)" : "translateY(-150%)")};
+  transform: ${({$menuOpen}) => ($menuOpen ? "translateY(0%)" : "translateY(-150%)")};
   transition: transform 0.3s ease;
 
   ul {
@@ -29,15 +29,22 @@ const Nav = styled.nav`
     color: inherit;
   }
 `
-// need to rework this, to work with mobile and desktop... use a mobile/desktop mode and conditionally check with the mode on props
-const NavBar = ({open, closeMenu}) => {
+
+const NavBar = ({menuOpen, closeMenu}) => {
+
+  const handleOnClick = () => {
+    if (menuOpen) {
+      closeMenu();
+    };
+  };
+
   return (
-    <Nav $open={open}>
+    <Nav $menuOpen={menuOpen}>
       <ul>
-        <li><Link to={"/"} onClick={closeMenu} tabIndex={open ? 0 : -1}>Home</Link></li>
-        <li><Link to={"/projects"} onClick={closeMenu} tabIndex={open ? 0 : -1}>Projects</Link></li>
-        <li><Link to={"/about"} onClick={closeMenu} tabIndex={open ? 0 : -1}>About</Link></li>
-        <li><Link to={"/contact"} onClick={closeMenu} tabIndex={open ? 0 : -1}>Contact</Link></li>
+        <li><Link to={"/"} onClick={handleOnClick} tabIndex={menuOpen ? 0 : -1}>Home</Link></li>
+        <li><Link to={"/projects"} onClick={handleOnClick} tabIndex={menuOpen ? 0 : -1}>Projects</Link></li>
+        <li><Link to={"/about"} onClick={handleOnClick} tabIndex={menuOpen ? 0 : -1}>About</Link></li>
+        <li><Link to={"/contact"} onClick={handleOnClick} tabIndex={menuOpen ? 0 : -1}>Contact</Link></li>
       </ul>
     </Nav>
   );
