@@ -3,6 +3,7 @@ import styled from "styled-components";
 import BurgerMenu from "./BurgerMenu";
 import NavBar from "./NavBar";
 import HeaderLogo from "./HeaderLogo";
+import ThemeToggle from "./ThemeToggle";
 
 const HeaderStyle = styled.header`
   padding: 1rem 0;
@@ -26,7 +27,7 @@ const Header = () => {
         <BurgerMenu menuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         <HeaderLogo />
         <NavBar menuOpen={isMenuOpen} closeMenu={() => setIsMenuOpen(false)} />
-        {/* themetoggle */}
+        <ThemeToggle />
       </ResponsiveContainer>
     </HeaderStyle>
   );

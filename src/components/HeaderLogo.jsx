@@ -23,7 +23,7 @@ const AnimationContainer = styled.div`
 const StyledSpan = styled.span`
   display: inline-block;
   min-width: 5ch;
-  color: rgba(var(--primary-font-color), 0.7);
+  color: rgba(var(--primary-color), 0.7);
   transform: ${({$slideIn}) => ($slideIn ? "translateX(0%)" : "translateX(-100%)")};
   transition: transform 0.3s ease;
 `
