@@ -3,6 +3,11 @@
   --primary-color: 33, 37, 41;
 }
 
+.dark-theme {
+  --bg-color: 23, 23, 49;
+  --primary-color: 249, 249, 249;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,13 +17,17 @@ body {
   line-height: 1.5;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: rgb(var(--bg-color));
+  background-color: rgb(var(--bg-color));
   color: rgb(var(--primary-color));
 }
 
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
+}
+
+body, button, a, input, select, textarea {
+  transition: background-color 1s ease, color 1s ease, border 1s ease;
 }
 
 input, button, textarea, select {
