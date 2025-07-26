@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Nav = styled.nav`
@@ -28,6 +28,10 @@ const Nav = styled.nav`
     text-decoration: none;
     color: inherit;
   }
+
+  li a.active {
+    border-bottom: 2px solid rgb(var(--primary-color));
+  }
 `
 
 const NavBar = ({menuOpen, closeMenu}) => {
@@ -41,10 +45,10 @@ const NavBar = ({menuOpen, closeMenu}) => {
   return (
     <Nav $menuOpen={menuOpen}>
       <ul>
-        <li><Link to={"/"} onClick={handleOnClick} tabIndex={menuOpen ? 0 : -1}>Home</Link></li>
-        <li><Link to={"/projects"} onClick={handleOnClick} tabIndex={menuOpen ? 0 : -1}>Projects</Link></li>
-        <li><Link to={"/about"} onClick={handleOnClick} tabIndex={menuOpen ? 0 : -1}>About</Link></li>
-        <li><Link to={"/contact"} onClick={handleOnClick} tabIndex={menuOpen ? 0 : -1}>Contact</Link></li>
+        <li><NavLink to={"/"} onClick={handleOnClick} tabIndex={menuOpen ? 0 : -1}>Home</NavLink></li>
+        <li><NavLink to={"/projects"} onClick={handleOnClick} tabIndex={menuOpen ? 0 : -1}>Projects</NavLink></li>
+        <li><NavLink to={"/about"} onClick={handleOnClick} tabIndex={menuOpen ? 0 : -1}>About</NavLink></li>
+        <li><NavLink to={"/contact"} onClick={handleOnClick} tabIndex={menuOpen ? 0 : -1}>Contact</NavLink></li>
       </ul>
     </Nav>
   );
