@@ -4,7 +4,7 @@ const StyledButton = styled.button`
   height: 2rem;
   aspect-ratio: 1 / 1;
   padding: 0.1rem;
-  background: transparent;
+  background-color: transparent;
   border: 2px solid rgb(var(--primary-color));
   z-index: 10;
 
@@ -17,7 +17,7 @@ const ButtonContent = styled.div`
   position: relative;
   user-select: none;
   height: 2px;
-  background: ${({$menuOpen}) => ($menuOpen ? "transparent" : "rgb(var(--primary-color))")}; 
+  background-color: ${({$menuOpen}) => ($menuOpen ? "transparent" : "rgb(var(--primary-color))")}; 
   transition: background 0.3 ease;
 
   &::before,
@@ -28,7 +28,7 @@ const ButtonContent = styled.div`
     user-select: none;
     height: 2px;
     width: 100%;
-    background: rgb(var(--primary-color));
+    background-color: rgb(var(--primary-color));
     transition: transform 0.3s ease;
   }
 

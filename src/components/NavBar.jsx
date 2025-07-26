@@ -6,7 +6,7 @@ const Nav = styled.nav`
   left: 50%;
   top: calc(100% + 1rem);
   z-index: 5;
-  background: rgb(var(--bg-color));
+  background-color: rgb(var(--bg-color));
   width: 100vw;
   padding: 1rem;
   text-align: center;
