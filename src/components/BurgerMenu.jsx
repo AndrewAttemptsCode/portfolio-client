@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const StyledButton = styled.button`
   height: 2rem;
+  width: auto;
   aspect-ratio: 1 / 1;
   padding: 0.1rem;
   background-color: transparent;
