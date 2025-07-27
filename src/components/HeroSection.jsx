@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import SocialsLinks from "./SocialsLinks";
 
 const HeroStyle = styled.section`
   padding: 1rem 0;
@@ -19,6 +20,7 @@ const HeroSection = () => {
         <p>Full-Stack Web Developer</p>
         <p>Manchester, England</p>
         <p>React • Node.js • Express • PostgreSQL • Prisma</p>
+        <SocialsLinks />
       </ResponsiveContainer>
     </HeroStyle>
   );
