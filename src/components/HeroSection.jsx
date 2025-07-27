@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const HeroStyle = styled.section`
   padding: 1rem 0;
-  background-color: rgba(var(--primary-color), 0.1);
+  background-color: rgba(var(--primary-color), 0.06);
 `
 
 const ResponsiveContainer = styled.div`
@@ -16,9 +16,9 @@ const HeroSection = () => {
     <HeroStyle>
       <ResponsiveContainer>
         <h2>Andrew Travis</h2>
+        <p>Full-Stack Web Developer</p>
         <p>Manchester, England</p>
-        <p>Full Stack Web Developer</p>
-        <p>Reactjs | Nodejs</p>
+        <p>React • Node.js • Express • PostgreSQL • Prisma</p>
       </ResponsiveContainer>
     </HeroStyle>
   );
