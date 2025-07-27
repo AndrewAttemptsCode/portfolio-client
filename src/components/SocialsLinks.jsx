@@ -12,11 +12,16 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
   }
+
+  span {
+    font-size: 0.9rem;
+  }
 `
 
 const IconContainer = styled.div`
   aspect-ratio: 1 / 1;
   height: 2rem;
+  width: auto;
 
   svg {
     object-fit: contain;
@@ -30,7 +35,7 @@ const SocialsLinks = () => {
     <Container>
       {socials.map(({ name, url, icon }) => (
         <a href={url} key={name} target="_blank" rel="noopener noreferrer">
-          <IconContainer>
+          <IconContainer aria-hidden="true">
             {icon}
           </IconContainer>
           <span>{name}</span>
