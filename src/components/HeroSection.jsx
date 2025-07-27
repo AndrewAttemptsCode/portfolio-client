@@ -10,6 +10,15 @@ const ResponsiveContainer = styled.div`
   width: min(80%, 1280px);
   margin: 0 auto;
   text-align: center;
+
+  h2 {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  p:last-of-type {
+    margin: 1rem 0;
+  }
 `
 
 const HeroSection = () => {
