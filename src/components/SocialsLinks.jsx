@@ -13,6 +13,10 @@ const Container = styled.div`
     flex-direction: column;
   }
 
+  a:hover svg {
+    transform: scale(1.1);
+  }
+
   span {
     font-size: 0.9rem;
   }
@@ -27,6 +31,7 @@ const IconContainer = styled.div`
     object-fit: contain;
     width: 100%;
     height: 100%;
+    transition: transform 0.2s ease;
   }
 `
 
