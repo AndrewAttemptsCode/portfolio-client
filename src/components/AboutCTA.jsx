@@ -20,6 +20,7 @@ const ResponsiveContainer = styled.div`
     border: 1px solid rgba(var(--primary-color), 1);
     background-color: rgba(var(--primary-color), 0.06);
     padding: 0.4rem 0.6rem;
+    transition: background-color 0.3s ease;
   }
 
   a:hover {
@@ -27,7 +28,6 @@ const ResponsiveContainer = styled.div`
   }
 
   p {
-    /* text-align: left; */
     margin: 1rem auto;
 
     @media (min-width: 768px) {
