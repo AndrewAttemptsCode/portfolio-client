@@ -1,4 +1,5 @@
 import AboutCTA from "../components/AboutCTA";
+import FocusTargets from "../components/FocusTargets";
 import HeroSection from "../components/HeroSection"
 
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
     <>
       <HeroSection />
       <AboutCTA />
+      <FocusTargets />
     </>
   );
 };
