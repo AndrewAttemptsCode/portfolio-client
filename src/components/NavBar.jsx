@@ -32,6 +32,23 @@ const Nav = styled.nav`
   li a.active {
     border-bottom: 2px solid rgb(var(--primary-color));
   }
+
+  @media (min-width: 768px) {
+    position: static;
+    background-color: transparent;
+    width: auto;
+    padding: 0;
+    transform: none;
+    margin-left: auto;
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      padding: 0 1rem;
+    }
+  }
 `
 
 const NavBar = ({menuOpen, closeMenu}) => {
