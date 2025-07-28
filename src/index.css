@@ -26,10 +26,6 @@ img, picture, video, canvas, svg {
   max-width: 100%;
 }
 
-body, button, a, input, select, textarea {
-  transition: background-color 1s ease, color 1s ease, border 1s ease;
-}
-
 input, button, textarea, select {
   font: inherit;
 }
