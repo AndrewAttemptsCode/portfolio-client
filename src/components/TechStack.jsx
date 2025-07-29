@@ -1,0 +1,27 @@
+import styled from "styled-components";
+import TechStackGroup from "./TechStackGroup";
+
+const TechStackStyle = styled.section`
+  padding: 1rem 0;
+`
+
+const TechStackContainer = styled.div`
+  width: min(80%, 1280px);
+  margin: 0 auto;
+`
+
+const TechStack = () => {
+  return (
+    <TechStackStyle>
+      <TechStackContainer>
+        <h2>Technical Stack</h2>
+        <TechStackGroup categoryTitle="Front End" category="frontend" />
+        <TechStackGroup categoryTitle="Back End" category="backend" />
+        <TechStackGroup categoryTitle="Testing" category="testing" />
+        <TechStackGroup categoryTitle="Tools & Hosting" category="tools" />
+      </TechStackContainer>
+    </TechStackStyle>
+  );
+};
+
+export default TechStack;
