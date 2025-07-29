@@ -23,6 +23,11 @@ const ItemContainer = styled.a`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 2px solid transparent;
+
+  &:hover {
+    border: 2px solid rgba(var(--primary-color), 0.2);
+  }
 `
 
 const IconContainer = styled.div`
