@@ -32,7 +32,7 @@ const ItemContainer = styled.a`
 
 const IconContainer = styled.div`
   aspect-ratio: 1 / 1;
-  height: 4rem;
+  height: 3rem;
   margin: 0 auto;
 
   svg {
