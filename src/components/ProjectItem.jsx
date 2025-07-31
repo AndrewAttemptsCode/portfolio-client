@@ -62,8 +62,8 @@ const StackContainer=  styled.div`
 
 `
 
-const ProjectItem = () => {
-  const project = projects.featured[0];
+const ProjectItem = ({ projectIndex }) => {
+  const project = projects.featured[projectIndex];
 
   return (
     <Container>
