@@ -42,8 +42,16 @@ const IconContainer = styled.div`
   }
 `
 
-const TechStackGroup = ({ categoryTitle, category }) => {
-  const list = techstacklist[category];
+const TechStackGroup = ({ categoryTitle, category, project = null }) => {
+  let list;
+
+  if (Array.isArray(project) && project.length === 0) {
+    return;
+  } else if (Array.isArray(project)) {
+    list = techstacklist[category].filter((tech) => project.includes(tech.title));
+  } else {
+    list = techstacklist[category];
+  }
 
   return (
     <Container>
