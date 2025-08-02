@@ -7,21 +7,26 @@ import TechStackGroup from "./TechStackGroup";
 const Container = styled.div`
   background-color: rgba(var(--primary-color), 0.06);
   border: 2px solid rgba(var(--primary-color), 0.2);
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 `
 
 const ResponsiveContainer = styled.div`
-  
+  @media (min-width: 1024px) {
+    display: flex;
+    gap: 2rem;
+  }
 `
 
 const ProjectPreview = styled.div`
-  
+    @media (min-width: 1024px) {
+    flex: 1;
+  }
 `
 
 const ImageContainer = styled.div`
   aspect-ratio: 3 / 2;
   background-color: rgb(var(--bg-color));
-  box-shadow: 0 0 0.3rem 0.15rem rgba(var(--primary-color), 0.1);
+  box-shadow: 0 0 0.5rem 0.1rem rgba(var(--primary-color), 0.06);
 
   img {
     width: 100%;
@@ -34,7 +39,10 @@ const LinksContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin: 0.5rem 0 1rem 0;
+  margin: 1rem 0;
+  background-color: rgba(var(--primary-color), 0.06);
+  width: fit-content;
+  padding: 1rem 0.5rem;
 
   a {
     display: flex;
@@ -63,13 +71,26 @@ const IconContainer = styled.div`
 `
 
 const ProjectDetails = styled.div`
+  background-color: rgba(var(--primary-color), 0.06);
+  padding: 1rem 0.5rem;
+
   p {
     margin: 1rem 0;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1024px) {
+    flex: 1;
   }
 `
 
 const StackContainer = styled.div`
-
+  h3 {
+    margin-top: 1rem;
+  }
 `
 
 const ProjectItem = ({ projectIndex }) => {
