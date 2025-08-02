@@ -2,6 +2,7 @@ import styled from "styled-components";
 import projects from "../utils/projects";
 import { FaChrome, FaGithub } from "react-icons/fa";
 import { MdInfoOutline } from "react-icons/md";
+import TechStackGroup from "./TechStackGroup";
 
 const Container = styled.div`
   background-color: rgba(var(--primary-color), 0.06);
@@ -115,7 +116,11 @@ const ProjectItem = ({ projectIndex }) => {
         </ProjectDetails>
       </ResponsiveContainer>
       <StackContainer>
-        stacks here
+        <h3>Technology Stack</h3>
+        <TechStackGroup categoryTitle="Front End" category="frontend" project={project.techstack.frontend} />
+        <TechStackGroup categoryTitle="Back End" category="backend" project={project.techstack.backend} />
+        <TechStackGroup categoryTitle="Testing" category="testing" project={project.techstack.testing} />
+        <TechStackGroup categoryTitle="Tools & Hosting" category="tools" project={project.techstack.tools} />
       </StackContainer>
     </Container>
   );
