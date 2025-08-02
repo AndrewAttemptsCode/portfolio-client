@@ -4,7 +4,9 @@ import { FaChrome, FaGithub } from "react-icons/fa";
 import { MdInfoOutline } from "react-icons/md";
 
 const Container = styled.div`
-  
+  background-color: rgba(var(--primary-color), 0.06);
+  border: 2px solid rgba(var(--primary-color), 0.2);
+  padding: 1rem;
 `
 
 const ResponsiveContainer = styled.div`
@@ -17,7 +19,14 @@ const ProjectPreview = styled.div`
 
 const ImageContainer = styled.div`
   aspect-ratio: 3 / 2;
-  background-color: rgba(var(--primary-color), 0.06);
+  background-color: rgb(var(--bg-color));
+  box-shadow: 0 0 0.3rem 0.15rem rgba(var(--primary-color), 0.1);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 `
 
 const LinksContainer = styled.div`
@@ -58,7 +67,7 @@ const ProjectDetails = styled.div`
   }
 `
 
-const StackContainer=  styled.div`
+const StackContainer = styled.div`
 
 `
 
@@ -71,7 +80,7 @@ const ProjectItem = ({ projectIndex }) => {
       <ResponsiveContainer>
         <ProjectPreview>
           <ImageContainer>
-            img here
+            <img src={project.image} alt="" />
           </ImageContainer>
           <LinksContainer>
             <LinksWrapper>
