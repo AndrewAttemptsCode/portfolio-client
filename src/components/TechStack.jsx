@@ -14,7 +14,7 @@ const TechStack = () => {
   return (
     <TechStackStyle>
       <TechStackContainer>
-        <h2>Technical Stack</h2>
+        <h2>Technology Stack</h2>
         <TechStackGroup categoryTitle="Front End" category="frontend" />
         <TechStackGroup categoryTitle="Back End" category="backend" />
         <TechStackGroup categoryTitle="Testing" category="testing" />
