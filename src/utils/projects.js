@@ -1,8 +1,12 @@
+import messengerApp from "../assets/messenger_app.webp";
+import blogApp from "../assets/blog_app.webp";
+import fileStorageApp from "../assets/filestorage_app.webp";
+
 const projects = {
   featured: [
     {
-      title: "Chat App",
-      // image: image preview here,
+      title: "Messenger Chat App",
+      image: messengerApp,
       links: {
         demo: ["https://www.google.co.uk", "https://www.twitch.tv"],
         source: ["https://www.google.co.uk", "https://www.twitch.tv"],
@@ -16,8 +20,8 @@ const projects = {
       },
     },
     {
-      title: "Second App",
-      // image: image preview here,
+      title: "Blog App",
+      image: blogApp,
       links: {
         demo: ["https://www.google.co.uk", "https://www.twitch.tv"],
         source: ["https://www.google.co.uk", "https://www.twitch.tv"],
@@ -31,8 +35,8 @@ const projects = {
       },
     },
     {
-      title: "Third App",
-      // image: image preview here,
+      title: "File Storage App",
+      image: fileStorageApp,
       links: {
         demo: ["https://www.google.co.uk", "https://www.twitch.tv"],
         source: ["https://www.google.co.uk", "https://www.twitch.tv"],
