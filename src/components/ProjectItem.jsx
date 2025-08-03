@@ -1,13 +1,27 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import projects from "../utils/projects";
 import { FaChrome, FaGithub } from "react-icons/fa";
 import { MdInfoOutline } from "react-icons/md";
 import TechStackGroup from "./TechStackGroup";
+import { Plus } from "lucide-react";
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+`
 
 const Container = styled.div`
   background-color: rgba(var(--primary-color), 0.06);
   border: 2px solid rgba(var(--primary-color), 0.2);
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem;
 `
 
 const ResponsiveContainer = styled.div`
@@ -65,6 +79,8 @@ const LinksWrapper = styled.div`
 const IconContainer = styled.div`
   aspect-ratio: 1 / 1;
   height: 1.4rem;
+  transform: ${({$expanded}) => $expanded ? "rotate(45deg)" : "rotate(0deg)"};
+  transition: transform 0.3s ease;
 
   svg {
     height: 100%;
@@ -90,13 +106,26 @@ const ProjectDetails = styled.div`
   }
 `
 
-const StackContainer = styled.div`
-  h3 {
-    margin-top: 1rem;
+const StackHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(var(--primary-color), 0.06);
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    padding: 1rem 0.5rem;
   }
 `
 
-const ProjectItem = ({ projectIndex }) => {
+const TechStackWrapper = styled.div`
+  animation: ${fadeIn} 2s ease;
+`
+
+const ProjectItem = ({ projectIndex, stackExpanded, toggleStackExpanded }) => {
+
   const project = projects.featured[projectIndex];
 
   return (
@@ -139,13 +168,29 @@ const ProjectItem = ({ projectIndex }) => {
           ))}
         </ProjectDetails>
       </ResponsiveContainer>
-      <StackContainer>
-        <h3>Technology Stack</h3>
-        <TechStackGroup categoryTitle="Front End" category="frontend" project={project.techstack.frontend} />
-        <TechStackGroup categoryTitle="Back End" category="backend" project={project.techstack.backend} />
-        <TechStackGroup categoryTitle="Testing" category="testing" project={project.techstack.testing} />
-        <TechStackGroup categoryTitle="Tools & Hosting" category="tools" project={project.techstack.tools} />
-      </StackContainer>
+      <>
+        <StackHeader
+          onClick={toggleStackExpanded}
+          aria-label="Toggle project tech stack"
+          aria-expanded={stackExpanded}
+        >
+          <h3>Technology Stack</h3>
+          <IconContainer
+            aria-hidden="true"
+            $expanded={stackExpanded}
+          >
+            <Plus />
+          </IconContainer>
+        </StackHeader>
+        {stackExpanded &&
+        <TechStackWrapper>
+          <TechStackGroup categoryTitle="Front End" category="frontend" project={project.techstack.frontend} />
+          <TechStackGroup categoryTitle="Back End" category="backend" project={project.techstack.backend} />
+          <TechStackGroup categoryTitle="Testing" category="testing" project={project.techstack.testing} />
+          <TechStackGroup categoryTitle="Tools & Hosting" category="tools" project={project.techstack.tools} />
+        </TechStackWrapper>
+        }
+      </>
     </Container>
   );
 };
