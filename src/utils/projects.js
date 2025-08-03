@@ -11,7 +11,12 @@ const projects = {
         demo: ["https://odin-messaging-app-client.pages.dev/"],
         source: ["https://github.com/AndrewAttemptsCode/odin-messaging-app-client", "https://github.com/AndrewAttemptsCode/odin-messaging-app-server"],
       },
-      description: ["Lorem, ipsum dolor sit amet consectetur adipisicing elit.", "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus saepe cumque."],
+      description: [
+        "A messaging app where users can create accounts, send messages to each other, and customize their profiles.",
+        "Interactivity is handled using modern web tools, making the app fast and responsive.",
+        "User login is securely managed by a server, with all data stored in a structured database that is easy to maintain and expand.",
+        "Live message updates are not supported — users will need to refresh the page to see new messages."
+      ],
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components", "Vite"],
         backend: ["Node.js", "Express", "PostgreSQL", "Prisma", "Passport.js"],
