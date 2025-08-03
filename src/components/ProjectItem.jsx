@@ -73,7 +73,8 @@ const LinksContainer = styled.div`
 
 const LinksWrapper = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem 1rem;
+  flex-wrap: wrap;
 `
 
 const IconContainer = styled.div`
