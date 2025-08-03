@@ -41,8 +41,11 @@ const LinksContainer = styled.div`
   gap: 0.5rem;
   margin: 1rem 0;
   background-color: rgba(var(--primary-color), 0.06);
-  width: fit-content;
   padding: 1rem 0.5rem;
+
+  @media (min-width: 1024px) {
+    margin: 2rem 0 0 0;
+  }
 
   a {
     display: flex;
