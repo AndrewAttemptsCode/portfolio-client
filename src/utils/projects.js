@@ -28,15 +28,23 @@ const projects = {
       title: "Blog App",
       image: blogApp,
       links: {
-        demo: ["https://www.google.co.uk", "https://www.twitch.tv"],
-        source: ["https://www.google.co.uk", "https://www.twitch.tv"],
+        demo: ["https://odinblogapi-public-client.pages.dev/"],
+        source: [
+          "https://github.com/AndrewAttemptsCode/odinblogapi-public-client",
+          "https://github.com/AndrewAttemptsCode/odinblogapi-admin-client",
+          "https://github.com/AndrewAttemptsCode/odinblogapi-server"
+        ],
       },
-      description: ["Lorem, ipsum dolor sit amet consectetur adipisicing elit.", "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus saepe cumque."],
+      description: [
+        "A blog app utilizing two websites - one for the readers to browse and comment on blog posts, and another for authorized users to create and publish blog posts.",
+        "Interactivity is handled using modern web tools, making the app fast and responsive all whilst content is dynamically displayed.",
+        "User login is securely managed by a server, with all data stored in a structured database that is easy to maintain and expand."
+      ],
       techstack: {
-        frontend: ["HTML", "CSS"],
-        backend: ["Node.js"],
-        tools: ["VS Code"],
-        testing: ["SuperTest"],
+        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components", "Vite"],
+        backend: ["Node.js", "Express", "PostgreSQL", "Prisma", "Passport.js"],
+        tools: ["Git", "GitHub", "VS Code", "Railway", "Cloudflare Pages", "EsLint", "Prettier"],
+        testing: [],
       },
     },
     {
