@@ -14,9 +14,15 @@ const ResponsiveContainer = styled.div`
 
 const FeaturedProjects = () => {
   const [projectIndex, setProjectIndex] = useState(0);
+  const [stackExpanded, setStackExpanded] = useState(false);
 
   const updateSelectProject = (index) => {
     setProjectIndex(index);
+    setStackExpanded(false);
+  };
+
+  const toggleStackExpanded = () => {
+    setStackExpanded((prev) => !prev);
   };
 
   return (
@@ -24,7 +30,7 @@ const FeaturedProjects = () => {
       <ResponsiveContainer>
         <h2>Featured Projects</h2>
         <FeaturedProjectsMenu projectIndex={projectIndex} updateSelectProject={updateSelectProject} />
-        <ProjectItem projectIndex={projectIndex}/>
+        <ProjectItem projectIndex={projectIndex} stackExpanded={stackExpanded} toggleStackExpanded={toggleStackExpanded} />
       </ResponsiveContainer>
     </FeaturedProjectsStyle>
   );
