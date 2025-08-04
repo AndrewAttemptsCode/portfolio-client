@@ -51,15 +51,19 @@ const projects = {
       title: "File Storage App",
       image: fileStorageApp,
       links: {
-        demo: ["https://www.google.co.uk", "https://www.twitch.tv"],
-        source: ["https://www.google.co.uk", "https://www.twitch.tv"],
+        demo: ["https://odin-file-uploader-production-c8f5.up.railway.app/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-file-uploader"],
       },
-      description: ["Lorem, ipsum dolor sit amet consectetur adipisicing elit.", "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus saepe cumque."],
+      description: [
+        "A file storage app where users can sign up, upload files, organize files into folders and with the option to download the files to local systems - similar to a basic version of Google Drive.",
+        "Users log in securely, and their session is saved so they stay logged in. Files are uploaded and saved in folders that the user creates. Each file shows details such as the name, size and upload time, with an option to download the file.",
+        "Files are stored on an external cloud storage system, and only the file link is saved in the database."
+      ],
       techstack: {
-        frontend: ["HTML", "CSS"],
-        backend: ["Node.js"],
-        tools: ["VS Code"],
-        testing: ["SuperTest"],
+        frontend: ["HTML", "CSS", "JavaScript"],
+        backend: ["Node.js", "Express", "PostgreSQL", "Prisma", "Passport.js", "EJS"],
+        tools: ["Git", "GitHub", "VS Code", "Railway", "EsLint", "Prettier"],
+        testing: [],
       },
     },
   ],
