@@ -1,4 +1,5 @@
 import AboutCTA from "../components/AboutCTA";
+import ContactForm from "../components/ContactForm";
 import FeaturedProjects from "../components/FeaturedProjects";
 import FocusTargets from "../components/FocusTargets";
 import HeroSection from "../components/HeroSection"
@@ -12,6 +13,7 @@ const HomePage = () => {
       <FocusTargets />
       <TechStack />
       <FeaturedProjects />
+      <ContactForm />
     </>
   );
 };
