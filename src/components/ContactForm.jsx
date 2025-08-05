@@ -44,7 +44,7 @@ const Form = styled.form`
 
   button {
     display: block;
-    margin: 0 auto;
+    margin: 0.5rem auto 0 auto;
     padding: 0.25rem 0.5rem;
     background-color: transparent;
     border: 2px solid rgba(var(--primary-color), 0.2);
@@ -64,6 +64,11 @@ const Form = styled.form`
   }
 `
 
+const ErrorText = styled.span`
+  display: block;
+  color: rgb(197, 0, 0);
+`
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -71,6 +76,7 @@ const ContactForm = () => {
     message: ""
   });
 
+  const [errors, setErrors] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const handleOnChange = (event) => {
@@ -81,8 +87,36 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    setLoading(true);
+    setErrors(null);
+    try {
+      const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/api/contact`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        console.error("HTTP Error:", data);
+        setErrors(data.errors);
+        return;
+      }
+
+      console.log("Form submitted successfully:", data);
+      //TODO: form submission confirmation message/clear form data
+
+    } catch (err) {
+      console.error("Contact form submission error:", err);
+      setErrors([{ path: "general", msg: "Server Error, please try again later." }]);
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -92,10 +126,14 @@ const ContactForm = () => {
         <Form onSubmit={handleSubmit}>
           <label htmlFor="name">Name:</label>
           <input type="text" name="name" id="name" value={formData.name} onChange={handleOnChange} placeholder="Alex Smith" />
+          <ErrorText>{errors?.find(error => error.path === "name")?.msg}</ErrorText>
           <label htmlFor="email">Email:</label>
           <input type="email" name="email" id="email" value={formData.email} onChange={handleOnChange} placeholder="example@email.com" />
+          <ErrorText>{errors?.find(error => error.path === "email")?.msg}</ErrorText>
           <label htmlFor="message">Message:</label>
           <textarea name="message" id="message" value={formData.message} onChange={handleOnChange} placeholder="Hi Andrew..."></textarea>
+          <ErrorText>{errors?.find(error => error.path === "message")?.msg}</ErrorText>
+          <ErrorText>{errors?.find(error => error.path === "general")?.msg}</ErrorText>
           <button type="submit" disabled={loading}>{loading ? "Processing" : "Send"}</button>
         </Form>
       </ResponsiveContainer>
