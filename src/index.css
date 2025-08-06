@@ -1,11 +1,13 @@
 :root {
   --bg-color: 249, 249, 249;
   --primary-color: 33, 37, 41;
+  --error-color: 215, 0, 0;
 }
 
 .dark-theme {
   --bg-color: 23, 23, 49;
   --primary-color: 249, 249, 249;
+  --error-color: 255, 117, 117;
 }
 
 * {
