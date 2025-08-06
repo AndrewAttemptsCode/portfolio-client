@@ -107,12 +107,14 @@ const ProjectDetails = styled.div`
   }
 `
 
-const StackHeader = styled.div`
+const StackHeader = styled.button`
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
   padding: 0.5rem;
+  width: 100%;
+  border: none;
   background-color: rgba(var(--primary-color), 0.06);
   cursor: pointer;
 
