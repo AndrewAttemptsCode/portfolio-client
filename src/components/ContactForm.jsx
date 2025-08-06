@@ -66,7 +66,7 @@ const Form = styled.form`
 
 const ErrorText = styled.span`
   display: block;
-  color: rgb(197, 0, 0);
+  color: rgb(var(--error-color));
 `
 
 const ContactForm = () => {
@@ -109,7 +109,6 @@ const ContactForm = () => {
       }
 
       console.log("Form submitted successfully:", data);
-      //TODO: form submission confirmation message/clear form data
 
     } catch (err) {
       console.error("Contact form submission error:", err);
