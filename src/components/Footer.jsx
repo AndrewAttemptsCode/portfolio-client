@@ -12,6 +12,13 @@ const ResponsiveContainer = styled.div`
   margin: 0 auto;
 `
 
+const ItemContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+`
+
 const FooterItem = styled.section`
   margin-bottom: 1rem;
 
@@ -33,38 +40,47 @@ const FooterItem = styled.section`
   }
 `
 
+const CopyrightContainer = styled.div`
+  text-align: center;
+`
+
 const Footer = () => {
   return (
     <FooterStyle>
       <ResponsiveContainer>
-        <FooterItem>
-          <h2>Site Nav</h2>
-          <ul>
-            <li><Link to={"/"}>Home</Link></li>
-            <li><Link to={"/projects"}>Projects</Link></li>
-            <li><Link to={"/about"}>About</Link></li>
-            <li><Link to={"/contact"}>Contact</Link></li>
-          </ul>
-        </FooterItem>
-        <FooterItem>
-          <h2>Projects</h2>
-          <ul>
-            <li><Link to={"/projects"}>Featured Projects</Link></li>
-            <li><Link to={"/projects#learning-archive"}>Learning Archive</Link></li>
-          </ul>
-        </FooterItem>
-        <FooterItem>
-          <h2>Connect</h2>
-          <ul>
-            {socials.map(({ name, url }) => (
-              <li key={name}>
-                <a href={url} target="_blank" rel="noopener noreferrer">
-                  {name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </FooterItem>
+        <ItemContainer>
+          <FooterItem>
+            <h2>Site Nav</h2>
+            <ul>
+              <li><Link to={"/"}>Home</Link></li>
+              <li><Link to={"/projects"}>Projects</Link></li>
+              <li><Link to={"/about"}>About</Link></li>
+              <li><Link to={"/contact"}>Contact</Link></li>
+            </ul>
+          </FooterItem>
+          <FooterItem>
+            <h2>Projects</h2>
+            <ul>
+              <li><Link to={"/projects"}>Featured Projects</Link></li>
+              <li><Link to={"/projects#learning-archive"}>Learning Archive</Link></li>
+            </ul>
+          </FooterItem>
+          <FooterItem>
+            <h2>Connect</h2>
+            <ul>
+              {socials.map(({ name, url }) => (
+                <li key={name}>
+                  <a href={url} target="_blank" rel="noopener noreferrer">
+                    {name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </FooterItem>
+        </ItemContainer>
+        <CopyrightContainer>
+          <p>&copy; {new Date().getFullYear()} Andrew Travis</p>
+        </CopyrightContainer>
       </ResponsiveContainer>
     </FooterStyle>
   );
