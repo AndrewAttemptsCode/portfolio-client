@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import ContactFormConfirmation from "./ContactFormConfirmation";
 
 const ContactFormStyle = styled.section`
   padding: 1rem 0;
@@ -78,6 +79,7 @@ const ContactForm = () => {
 
   const [errors, setErrors] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleOnChange = (event) => {
     const { name, value } = event.target;
@@ -109,6 +111,7 @@ const ContactForm = () => {
       }
 
       console.log("Form submitted successfully:", data);
+      setFormSubmitted(true);
 
     } catch (err) {
       console.error("Contact form submission error:", err);
@@ -116,6 +119,10 @@ const ContactForm = () => {
     } finally {
       setLoading(false);
     }
+  }
+
+  if (formSubmitted) {
+    return <ContactFormConfirmation visitorName={formData.name} />;
   }
 
   return (
