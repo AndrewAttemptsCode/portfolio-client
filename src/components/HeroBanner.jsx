@@ -4,6 +4,7 @@ const HeroBannerStyle = styled.section`
   padding: 1rem 0;
   background-color: rgba(var(--primary-color), 0.06);
   min-height: 30vh;
+  min-height: 30dvh;
 `
 
 const ResponsiveContainer = styled.div`
