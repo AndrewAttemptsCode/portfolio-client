@@ -114,6 +114,7 @@ const StackHeader = styled.button`
   margin-top: 1rem;
   padding: 0.5rem;
   width: 100%;
+  color: inherit;
   border: none;
   background-color: rgba(var(--primary-color), 0.06);
   cursor: pointer;
