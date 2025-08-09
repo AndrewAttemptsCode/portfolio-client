@@ -30,11 +30,11 @@ const ArchiveProjects = () => {
     <ArchiveProjectsStyle>
       <ResponsiveContainer>
         <h2>Learning Archive</h2>
-        {projects.featured.map(({ title }, index) => (
+        {projects.archive.map(({ title }, index) => (
           <div key={index}>
           <ArchiveProjectsMenu title={title} projectExpanded={projectExpandedIndex === index} toggleProjectExpanded={() => toggleProjectExpanded(index)} />
           {projectExpandedIndex === index &&
-          <ProjectItem projectIndex={index} stackExpanded={stackExpandedIndex === index} toggleStackExpanded={() => toggleStackExpanded(index)} />
+          <ProjectItem projectIndex={index} projectType="archive" stackExpanded={stackExpandedIndex === index} toggleStackExpanded={() => toggleStackExpanded(index)} />
           }
           </div>
         ))}

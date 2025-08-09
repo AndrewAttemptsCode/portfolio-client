@@ -30,7 +30,7 @@ const FeaturedProjects = () => {
       <ResponsiveContainer>
         <h2>Featured Projects</h2>
         <FeaturedProjectsMenu projectIndex={projectIndex} updateSelectProject={updateSelectProject} />
-        <ProjectItem projectIndex={projectIndex} stackExpanded={stackExpanded} toggleStackExpanded={toggleStackExpanded} />
+        <ProjectItem projectIndex={projectIndex} projectType="featured" stackExpanded={stackExpanded} toggleStackExpanded={toggleStackExpanded} />
       </ResponsiveContainer>
     </FeaturedProjectsStyle>
   );

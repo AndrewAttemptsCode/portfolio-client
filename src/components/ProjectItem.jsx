@@ -128,9 +128,9 @@ const TechStackWrapper = styled.div`
   animation: ${fadeIn} 2s ease;
 `
 
-const ProjectItem = ({ projectIndex, stackExpanded, toggleStackExpanded }) => {
+const ProjectItem = ({ projectIndex, projectType, stackExpanded, toggleStackExpanded }) => {
 
-  const project = projects.featured[projectIndex];
+  const project = projects[projectType][projectIndex];
 
   return (
     <Container>
