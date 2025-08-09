@@ -1,6 +1,9 @@
 import messengerApp from "../assets/messenger_app.webp";
 import blogApp from "../assets/blog_app.webp";
 import fileStorageApp from "../assets/filestorage_app.webp";
+import photoTaggingApp from "../assets/phototagging_app.webp";
+import membersOnlyApp from "../assets/membersonly_app.webp";
+import moviesInventoryApp from "../assets/moviesinventory_app.webp";
 
 const projects = {
   featured: [
@@ -67,6 +70,67 @@ const projects = {
       },
     },
   ],
+  archive: [
+    {
+      title: "Photo Tagging App",
+      image: photoTaggingApp,
+      links: {
+        demo: ["https://odin-photo-tagging-client.pages.dev/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-photo-tagging-client", "https://github.com/AndrewAttemptsCode/odin-photo-tagging-server"],
+      },
+      description: [
+        "A photo tagging app where users can select areas of an image to make guesses to find all the characters.",
+        "Interactivity is handled using modern web tools, making the app fast and responsive.",
+        "User guess attempts are processed through a server and checked against stored values in a relational database.",
+        "On game completion, users can enter their name to be displayed on the leaderboard, ranked by time taken to find all characters."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components", "Vite"],
+        backend: ["Node.js", "Express", "PostgreSQL", "Prisma"],
+        tools: ["Git", "GitHub", "VS Code", "Railway", "Cloudflare Pages", "EsLint", "Prettier"],
+        testing: ["Jest", "SuperTest"],
+      },
+    },
+    {
+      title: "Members Only App",
+      image: membersOnlyApp,
+      links: {
+        demo: ["https://odin-members-only-production-d17d.up.railway.app/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-members-only"],
+      },
+      description: [
+        "A messaging board app where users that have joined the club via a hidden phrase on the webpage can submit messages with titles.",
+        "Interactivity is handled using modern web tools, making the app fast and responsive.",
+        "Users log in securely where they can submit messages that contain a title and message that are processed through a server and checked for validity before being displayed."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript"],
+        backend: ["Node.js", "Express", "PostgreSQL", "EJS", "Passport.js"],
+        tools: ["Git", "GitHub", "VS Code", "Railway", "EsLint", "Prettier"],
+        testing: [],
+      },
+    },
+    {
+      title: "Movies Inventory App",
+      image: moviesInventoryApp,
+      links: {
+        demo: ["https://odin-inventory-app-production-2d18.up.railway.app/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-inventory-app"],
+      },
+      description: [
+        "A movies inventory app where users can explore existing movie titles, directors, and genres.",
+        "Interactivity is handled using modern web tools, making the app fast and responsive.",
+        "Users are able to submit new movies to the inventory, and edit movie entries to assign new genres and directors to the movie.",
+        "All the submitted data is handled through a server which is processed and updated in a relational database"
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript"],
+        backend: ["Node.js", "Express", "PostgreSQL", "EJS"],
+        tools: ["Git", "GitHub", "VS Code", "Railway", "EsLint", "Prettier"],
+        testing: [],
+      },
+    },
+  ]
 };
 
 export default projects;
