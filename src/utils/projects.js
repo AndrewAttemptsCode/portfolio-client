@@ -4,6 +4,7 @@ import fileStorageApp from "../assets/filestorage_app.webp";
 import photoTaggingApp from "../assets/phototagging_app.webp";
 import membersOnlyApp from "../assets/membersonly_app.webp";
 import moviesInventoryApp from "../assets/moviesinventory_app.webp";
+import miniMessageBoardApp from "../assets/minimessageboard_app.webp";
 
 const projects = {
   featured: [
@@ -72,7 +73,7 @@ const projects = {
   ],
   archive: [
     {
-      title: "Photo Tagging App",
+      title: "Photo Tagger",
       image: photoTaggingApp,
       links: {
         demo: ["https://odin-photo-tagging-client.pages.dev/"],
@@ -92,7 +93,7 @@ const projects = {
       },
     },
     {
-      title: "Members Only App",
+      title: "Members Only",
       image: membersOnlyApp,
       links: {
         demo: ["https://odin-members-only-production-d17d.up.railway.app/"],
@@ -111,7 +112,7 @@ const projects = {
       },
     },
     {
-      title: "Movies Inventory App",
+      title: "Movies Inventory",
       image: moviesInventoryApp,
       links: {
         demo: ["https://odin-inventory-app-production-2d18.up.railway.app/"],
@@ -121,6 +122,25 @@ const projects = {
         "A movies inventory app where users can explore existing movie titles, directors, and genres.",
         "Interactivity is handled using modern web tools, making the app fast and responsive.",
         "Users are able to submit new movies to the inventory, and edit movie entries to assign new genres and directors to the movie.",
+        "All the submitted data is handled through a server which is processed and updated in a relational database"
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript"],
+        backend: ["Node.js", "Express", "PostgreSQL", "EJS"],
+        tools: ["Git", "GitHub", "VS Code", "Railway", "EsLint", "Prettier"],
+        testing: [],
+      },
+    },
+    {
+      title: "Mini Message Board",
+      image: miniMessageBoardApp,
+      links: {
+        demo: ["https://odin-mini-message-board-production-79ad.up.railway.app/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-mini-message-board"],
+      },
+      description: [
+        "A mini messaging board where users can submit a message with title that will be displayed on the homepage.",
+        "Interactivity is handled using modern web tools, making the app fast and responsive.",
         "All the submitted data is handled through a server which is processed and updated in a relational database"
       ],
       techstack: {
