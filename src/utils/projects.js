@@ -5,6 +5,7 @@ import photoTaggingApp from "../assets/phototagging_app.webp";
 import membersOnlyApp from "../assets/membersonly_app.webp";
 import moviesInventoryApp from "../assets/moviesinventory_app.webp";
 import miniMessageBoardApp from "../assets/minimessageboard_app.webp";
+import shoppingCartApp from "../assets/shoppingcart_app.webp";
 
 const projects = {
   featured: [
@@ -147,6 +148,24 @@ const projects = {
         frontend: ["HTML", "CSS", "JavaScript"],
         backend: ["Node.js", "Express", "PostgreSQL", "EJS"],
         tools: ["Git", "GitHub", "VS Code", "Railway", "EsLint", "Prettier"],
+        testing: [],
+      },
+    },
+    {
+      title: "Shopping Cart",
+      image: shoppingCartApp,
+      links: {
+        demo: ["https://odin-shopping-cart-f4u.pages.dev/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-shopping-cart"],
+      },
+      description: [
+        "An interactive online shop application where users can browse and select multiple products to add to a dynamically updating shopping cart. The cart automatically recalculates the total quantity and price in real time, ensuring a smooth and intuitive shopping experience.",
+        "Interactivity is handled using modern web tools, making the app fast and responsive."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components", "Vite"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code", "EsLint", "Prettier"],
         testing: [],
       },
     },
