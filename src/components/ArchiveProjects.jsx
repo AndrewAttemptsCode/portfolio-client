@@ -15,10 +15,15 @@ const ResponsiveContainer = styled.div`
 `
 
 const ArchiveProjects = () => {
-  const [stackExpanded, setStackExpanded] = useState(false);
+  const [projectExpandedIndex, setProjectExpandedIndex] = useState(null);
+  const [stackExpandedIndex, setStackExpandedIndex] = useState(null);
 
-  const toggleStackExpanded = () => {
-    setStackExpanded((prev) => !prev);
+  const toggleStackExpanded = (index) => {
+    setStackExpandedIndex((prev) => (prev === index ? null : index));
+  };
+
+  const toggleProjectExpanded = (index) => {
+    setProjectExpandedIndex((prev) => (prev === index ? null : index));
   };
 
   return (
@@ -27,12 +32,10 @@ const ArchiveProjects = () => {
         <h2>Learning Archive</h2>
         {projects.featured.map(({ title }, index) => (
           <div key={index}>
-          <ArchiveProjectsMenu title={title} />
-          <ProjectItem projectIndex={index} stackExpanded={stackExpanded} toggleStackExpanded={toggleStackExpanded} />
-          {/* TODO: Hide project items by default
-                Toggle project item based off menu index
-                Selecting new project item closes previous project item
-                Switch out featured for archive once working */}
+          <ArchiveProjectsMenu title={title} projectExpanded={projectExpandedIndex === index} toggleProjectExpanded={() => toggleProjectExpanded(index)} />
+          {projectExpandedIndex === index &&
+          <ProjectItem projectIndex={index} stackExpanded={stackExpandedIndex === index} toggleStackExpanded={() => toggleStackExpanded(index)} />
+          }
           </div>
         ))}
       </ResponsiveContainer>
