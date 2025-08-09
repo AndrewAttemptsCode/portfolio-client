@@ -11,10 +11,15 @@ const DropdownMenu = styled.button`
   color: inherit;
   background-color: rgba(var(--primary-color), 0.06);
   border: 2px solid rgba(var(--primary-color), 0.2);
+  border-bottom: ${({$expanded}) => $expanded ? "none" : "null"};
   cursor: pointer;
 
   @media (min-width: 768px) {
     padding: 1rem 1rem;
+  }
+
+  h3 {
+    opacity: ${({$expanded}) => $expanded ? "0" : "1"};
   }
 `
 
@@ -31,13 +36,18 @@ const IconContainer = styled.div`
   }
 `
 
-const ArchiveProjectsMenu = ({ title }) => {
+const ArchiveProjectsMenu = ({ title, projectExpanded, toggleProjectExpanded }) => {
   return (
-    <DropdownMenu>
+    <DropdownMenu
+      onClick={toggleProjectExpanded}
+      $expanded={projectExpanded}
+      aria-label="Expand learning archive project"
+      aria-expanded={projectExpanded}
+    >
       <h3>{title}</h3>
       <IconContainer
         aria-hidden="true"
-        // $expanded={projectExpanded}
+        $expanded={projectExpanded}
       >
         <Plus />
       </IconContainer>
