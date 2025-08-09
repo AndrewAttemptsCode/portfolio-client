@@ -19,7 +19,12 @@ const DropdownMenu = styled.button`
   }
 
   h3 {
+    font-size: 1rem;
     opacity: ${({$expanded}) => $expanded ? "0" : "1"};
+
+    @media (min-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
 `
 
