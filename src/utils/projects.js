@@ -17,6 +17,8 @@ import ticTacToeApp from "../assets/tictactoe_app.webp";
 import bookLibraryApp from "../assets/booklibrary_app.webp";
 import dashboardApp from "../assets/dashboard_app.webp";
 import signupFormApp from "../assets/signupform_app.webp";
+import calculatorApp from "../assets/calculator_app.webp";
+import etchasketchApp from "../assets/etchasketch_app.webp";
 
 const projects = {
   featured: [
@@ -374,6 +376,41 @@ const projects = {
       ],
       techstack: {
         frontend: ["HTML", "CSS"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code"],
+        testing: [],
+      },
+    },
+    {
+      title: "Calculator",
+      image: calculatorApp,
+      links: {
+        demo: ["https://andrewattemptscode.github.io/odin-calculator/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-calculator"],
+      },
+      description: [
+        "A fully functional on-screen calculator built with JavaScript, HTML, and CSS. It lets users perform basic math operations like addition, subtraction, multiplication, and division, one step at a time."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code"],
+        testing: [],
+      },
+    },
+    {
+      title: "Etch-a-Sketch",
+      image: etchasketchApp,
+      links: {
+        demo: ["https://andrewattemptscode.github.io/odin-etchasketch/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-etchasketch"],
+      },
+      description: [
+        "A browser-based Etch-a-Sketch toy created with JavaScript and Flexbox. It displays a grid of squares that change color when you select a cell or drag over them, letting you draw by moving the mouse.",
+        "You can also set the grid size dynamically, creating a new drawing area up to 100 squares per side and randomized colour mode."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript"],
         backend: [],
         tools: ["Git", "GitHub", "VS Code"],
         testing: [],
