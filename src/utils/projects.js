@@ -9,6 +9,7 @@ import shoppingCartApp from "../assets/shoppingcart_app.webp";
 import memoryCardApp from "../assets/memorycard_app.webp";
 import cvBuilderApp from "../assets/cvbuilder_app.webp";
 import homepage from "../assets/homepage.webp";
+import battleshipApp from "../assets/battleship_app.webp";
 
 const projects = {
   featured: [
@@ -225,6 +226,24 @@ const projects = {
         backend: [],
         tools: ["Git", "GitHub", "VS Code"],
         testing: [],
+      },
+    },
+    {
+      title: "Battleship",
+      image: battleshipApp,
+      links: {
+        demo: ["https://andrewattemptscode.github.io/odin-battleship/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-battleship"],
+      },
+      description: [
+        "An interactive Battleship game where you try to sink all of the computer’s ships before it sinks yours. Players take turns choosing spots to attack, with the game tracking hits, misses, and when ships are sunk.",
+        "Built step-by-step with tests to make sure the game logic works perfectly, then finished with an interface for playing directly in the browser."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "Webpack"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code"],
+        testing: ["Jest"],
       },
     },
   ]
