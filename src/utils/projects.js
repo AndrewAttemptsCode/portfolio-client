@@ -10,6 +10,7 @@ import memoryCardApp from "../assets/memorycard_app.webp";
 import cvBuilderApp from "../assets/cvbuilder_app.webp";
 import homepage from "../assets/homepage.webp";
 import battleshipApp from "../assets/battleship_app.webp";
+import weatherforecastApp from "../assets/weatherforecast_app.webp";
 
 const projects = {
   featured: [
@@ -244,6 +245,25 @@ const projects = {
         backend: [],
         tools: ["Git", "GitHub", "VS Code"],
         testing: ["Jest"],
+      },
+    },
+    {
+      title: "Weather Forecast",
+      image: weatherforecastApp,
+      links: {
+        demo: ["https://andrewattemptscode.github.io/odin-weatherapp/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-weatherapp"],
+      },
+      description: [
+        "A weather app where you can search for any location and see the current forecast, with the option to view temperatures in either Celsius or Fahrenheit.",
+        "The page updates based on the weather, adding a visual touch to match the conditions.",
+        "Powered by live weather data from an external API, the app fetches and displays the latest information instantly, making it quick and easy to check the forecast."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "Webpack"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code", "EsLint", "Prettier"],
+        testing: [],
       },
     },
   ]
