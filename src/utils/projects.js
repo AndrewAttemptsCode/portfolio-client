@@ -6,6 +6,7 @@ import membersOnlyApp from "../assets/membersonly_app.webp";
 import moviesInventoryApp from "../assets/moviesinventory_app.webp";
 import miniMessageBoardApp from "../assets/minimessageboard_app.webp";
 import shoppingCartApp from "../assets/shoppingcart_app.webp";
+import memoryCardApp from "../assets/memorycard_app.webp";
 
 const projects = {
   featured: [
@@ -164,6 +165,24 @@ const projects = {
       ],
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components", "Vite"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code", "EsLint", "Prettier"],
+        testing: [],
+      },
+    },
+    {
+      title: "Memory Cards",
+      image: memoryCardApp,
+      links: {
+        demo: ["https://odin-memory-card-b4m.pages.dev/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-memory-card"],
+      },
+      description: [
+        "A fun and interactive memory game where players try to click each unique card without repeating any. Each time a card is clicked, all the cards shuffle into a new random order, keeping the game challenging. The scoreboard tracks the player’s current score and best score, adding a competitive edge to each round.",
+        "Images for the cards are fetched from an online source, making the game visually engaging and unique every time it’s played."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript", "React", "Vite"],
         backend: [],
         tools: ["Git", "GitHub", "VS Code", "EsLint", "Prettier"],
         testing: [],
