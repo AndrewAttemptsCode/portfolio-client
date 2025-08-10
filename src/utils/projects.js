@@ -7,6 +7,8 @@ import moviesInventoryApp from "../assets/moviesinventory_app.webp";
 import miniMessageBoardApp from "../assets/minimessageboard_app.webp";
 import shoppingCartApp from "../assets/shoppingcart_app.webp";
 import memoryCardApp from "../assets/memorycard_app.webp";
+import cvBuilderApp from "../assets/cvbuilder_app.webp";
+import homepage from "../assets/homepage.webp";
 
 const projects = {
   featured: [
@@ -185,6 +187,43 @@ const projects = {
         frontend: ["HTML", "CSS", "JavaScript", "React", "Vite"],
         backend: [],
         tools: ["Git", "GitHub", "VS Code", "EsLint", "Prettier"],
+        testing: [],
+      },
+    },
+    {
+      title: "CV Builder",
+      image: cvBuilderApp,
+      links: {
+        demo: ["https://odin-cv-builder.pages.dev/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-cv-builder"],
+      },
+      description: [
+        "An interactive CV builder where users can fill in their personal details, education history, and work experience to instantly generate a professional resume.",
+        "Each section can be edited at any time, allowing users to update their information and see changes reflected right away.",
+        "Built with modern web tools for a smooth, real-time editing experience, making it quick and easy to create a polished CV ready to share."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript", "React", "Vite"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code", "EsLint", "Prettier"],
+        testing: [],
+      },
+    },
+    {
+      title: "Homepage",
+      image: homepage,
+      links: {
+        demo: ["https://andrewattemptscode.github.io/odin-homepage/src/index.html"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-homepage"],
+      },
+      description: [
+        "A responsive homepage designed to adapt to desktop, tablet, and mobile screens. The layout showcases a clean structure with sections for an introduction, featured projects, and contact information, styled with modern HTML and CSS techniques.",
+        "Built with a focus on flexible design and smooth scaling across devices."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code"],
         testing: [],
       },
     },
