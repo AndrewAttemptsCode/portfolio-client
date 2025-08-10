@@ -19,6 +19,9 @@ import dashboardApp from "../assets/dashboard_app.webp";
 import signupFormApp from "../assets/signupform_app.webp";
 import calculatorApp from "../assets/calculator_app.webp";
 import etchasketchApp from "../assets/etchasketch_app.webp";
+import rockPaperScissorsApp from "../assets/rockpaperscissors_app.webp";
+import landingPageApp from "../assets/landingpage_app.webp";
+import recipesApp from "../assets/recipes_app.webp";
 
 const projects = {
   featured: [
@@ -411,6 +414,58 @@ const projects = {
       ],
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code"],
+        testing: [],
+      },
+    },
+    {
+      title: "Rock Paper Scissors",
+      image: rockPaperScissorsApp,
+      links: {
+        demo: ["https://andrewattemptscode.github.io/odin-rockpaperscissor/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-rockpaperscissor"],
+      },
+      description: [
+        "Rock Paper Scissors game built with JavaScript. The player competes against the computer, which picks rock, paper, or scissors at random. The game plays five rounds, keeps track of scores, and announces the winner at the end."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code"],
+        testing: [],
+      },
+    },
+    {
+      title: "Landing Page",
+      image: landingPageApp,
+      links: {
+        demo: ["https://andrewattemptscode.github.io/odin-landing-page/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-landing-page"],
+      },
+      description: [
+        "A simple introduction landing web page, discovering the use of HTML and CSS with the use of Flexbox design."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code"],
+        testing: [],
+      },
+    },
+    {
+      title: "Recipes",
+      image: recipesApp,
+      links: {
+        demo: ["https://andrewattemptscode.github.io/odin-recipes/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-recipes"],
+      },
+      description: [
+        "My first web application.",
+        "Demonstrates fundamental HTML and CSS skills, showcasing the basics of building a website."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS"],
         backend: [],
         tools: ["Git", "GitHub", "VS Code"],
         testing: [],
