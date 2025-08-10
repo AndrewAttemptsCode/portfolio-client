@@ -11,6 +11,9 @@ import cvBuilderApp from "../assets/cvbuilder_app.webp";
 import homepage from "../assets/homepage.webp";
 import battleshipApp from "../assets/battleship_app.webp";
 import weatherforecastApp from "../assets/weatherforecast_app.webp";
+import todoApp from "../assets/todolist_app.webp";
+import restaurantApp from "../assets/restaurant_app.webp";
+import ticTacToeApp from "../assets/tictactoe_app.webp";
 
 const projects = {
   featured: [
@@ -241,7 +244,7 @@ const projects = {
         "Built step-by-step with tests to make sure the game logic works perfectly, then finished with an interface for playing directly in the browser."
       ],
       techstack: {
-        frontend: ["HTML", "CSS", "Webpack"],
+        frontend: ["HTML", "CSS", "JavaScript", "Webpack"],
         backend: [],
         tools: ["Git", "GitHub", "VS Code"],
         testing: ["Jest"],
@@ -260,9 +263,63 @@ const projects = {
         "Powered by live weather data from an external API, the app fetches and displays the latest information instantly, making it quick and easy to check the forecast."
       ],
       techstack: {
-        frontend: ["HTML", "CSS", "Webpack"],
+        frontend: ["HTML", "CSS", "JavaScript", "Webpack"],
         backend: [],
         tools: ["Git", "GitHub", "VS Code", "EsLint", "Prettier"],
+        testing: [],
+      },
+    },
+    {
+      title: "ToDo List",
+      image: todoApp,
+      links: {
+        demo: ["https://andrewattemptscode.github.io/odin-todo-list/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-todo-list"],
+      },
+      description: [
+        "A customizable to-do list app where you can create tasks with titles, descriptions, due dates, and priorities, and organize them into different projects. Tasks can be edited, marked as complete, or deleted, giving full control over your schedule.",
+        "The app saves your projects and tasks in your browser’s storage, so your list stays intact even after refreshing the page."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript", "Webpack"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code"],
+        testing: [],
+      },
+    },
+    {
+      title: "Restaurant Page",
+      image: restaurantApp,
+      links: {
+        demo: ["https://andrewattemptscode.github.io/odin-restaurant-page/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-restaurant-page"],
+      },
+      description: [
+        "A dynamic restaurant website where every part of the page, from the homepage to the menu and contact sections is generated entirely with JavaScript.",
+        "Users can switch between sections using tabbed navigation, and the content updates instantly without reloading the page."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript", "Webpack"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code"],
+        testing: [],
+      },
+    },
+    {
+      title: "Tic Tac Toe",
+      image: ticTacToeApp,
+      links: {
+        demo: ["https://andrewattemptscode.github.io/odin-tictactoe/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-tictactoe"],
+      },
+      description: [
+        "Tic Tac Toe game where two players take turns marking spaces on a 3×3 grid, aiming to get three in a row before their opponent. The game detects wins, ties, and prevents moves on already-filled spots.",
+        "Players can enter their names, start or restart the game, and see the results instantly on a clean, interactive board."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code"],
         testing: [],
       },
     },
