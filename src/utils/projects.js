@@ -16,6 +16,7 @@ import restaurantApp from "../assets/restaurant_app.webp";
 import ticTacToeApp from "../assets/tictactoe_app.webp";
 import bookLibraryApp from "../assets/booklibrary_app.webp";
 import dashboardApp from "../assets/dashboard_app.webp";
+import signupFormApp from "../assets/signupform_app.webp";
 
 const projects = {
   featured: [
@@ -352,6 +353,24 @@ const projects = {
       },
       description: [
         "A clean and organized dashboard webpage that uses CSS Grid to arrange different sections like a sidebar, header, and main content area. The layout helps display navigation, user info, projects, and announcements clearly and neatly."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code"],
+        testing: [],
+      },
+    },
+    {
+      title: "Signup Form",
+      image: signupFormApp,
+      links: {
+        demo: ["https://andrewattemptscode.github.io/odin-signup-form/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-signup-form"],
+      },
+      description: [
+        "A stylish sign-up page for a fictional service featuring a large background image, custom fonts, and clear form fields for users to create an account. The design highlights important areas like the logo and the ‘Create Account’ button with color and transparency for easy readability.",
+        "The form includes basic visual cues—like colored borders—to show when inputs are focused or invalid, helping users fill it out correctly."
       ],
       techstack: {
         frontend: ["HTML", "CSS"],
