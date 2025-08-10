@@ -14,6 +14,8 @@ import weatherforecastApp from "../assets/weatherforecast_app.webp";
 import todoApp from "../assets/todolist_app.webp";
 import restaurantApp from "../assets/restaurant_app.webp";
 import ticTacToeApp from "../assets/tictactoe_app.webp";
+import bookLibraryApp from "../assets/booklibrary_app.webp";
+import dashboardApp from "../assets/dashboard_app.webp";
 
 const projects = {
   featured: [
@@ -318,6 +320,41 @@ const projects = {
       ],
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code"],
+        testing: [],
+      },
+    },
+    {
+      title: "Book Library",
+      image: bookLibraryApp,
+      links: {
+        demo: ["https://andrewattemptscode.github.io/odin-library/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-library"],
+      },
+      description: [
+        "A small app to keep track of books you own. You can add new books with details like title, author, pages, and whether you’ve read them or not. All books are stored in a list you can view and update.",
+        "You can see your books displayed on the page, remove any book, or change its read status with just a click. The app keeps everything organized by using unique IDs to manage each book separately."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript"],
+        backend: [],
+        tools: ["Git", "GitHub", "VS Code"],
+        testing: [],
+      },
+    },
+    {
+      title: "Admin Dashboard",
+      image: dashboardApp,
+      links: {
+        demo: ["https://andrewattemptscode.github.io/odin-admin-dashboard/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-admin-dashboard"],
+      },
+      description: [
+        "A clean and organized dashboard webpage that uses CSS Grid to arrange different sections like a sidebar, header, and main content area. The layout helps display navigation, user info, projects, and announcements clearly and neatly."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS"],
         backend: [],
         tools: ["Git", "GitHub", "VS Code"],
         testing: [],
