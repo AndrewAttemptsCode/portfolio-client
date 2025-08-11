@@ -27,6 +27,11 @@ const Nav = styled.nav`
   li a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: rgba(var(--primary-color), 0.8);
+    }
   }
 
   li a.active {
