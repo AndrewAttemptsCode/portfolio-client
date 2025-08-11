@@ -22,6 +22,10 @@ const ResponsiveContainer = styled.div`
     line-height: 1;
     text-transform: uppercase;
   }
+
+  p {
+    white-space: pre-line;
+  }
 `
 
 const HeroBanner = ({ title, subtitle }) => {
