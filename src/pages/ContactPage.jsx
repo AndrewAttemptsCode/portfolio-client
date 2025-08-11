@@ -15,7 +15,7 @@ const Container = styled.div`
 const ContactPage = () => {
   return (
     <>
-      <HeroBanner title="Contact" subtitle="Something peaked your interest? ...send me a message!"/>
+      <HeroBanner title="Contact" subtitle={"Something peaked your interest?\n...send me a message!"}/>
       <Container>
         <ContactForm />
         <SocialsLinks />
