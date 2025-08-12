@@ -21,10 +21,12 @@ const ResponsiveContainer = styled.div`
   h2 {
     line-height: 1;
     text-transform: uppercase;
+    font-size: clamp(1.5rem, 1rem + 2.5vw, 3rem);
   }
 
   p {
     white-space: pre-line;
+    font-size: clamp(1rem, 0.9167rem + 0.4167vw, 1.25rem);
   }
 `
 
