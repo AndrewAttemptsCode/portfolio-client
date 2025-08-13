@@ -22,9 +22,29 @@ import etchasketchApp from "../assets/etchasketch_app.webp";
 import rockPaperScissorsApp from "../assets/rockpaperscissors_app.webp";
 import landingPageApp from "../assets/landingpage_app.webp";
 import recipesApp from "../assets/recipes_app.webp";
+import portfolioApp from "../assets/portfolio_app.webp";
 
 const projects = {
   featured: [
+    {
+      title: "Portfolio App",
+      image: portfolioApp,
+      links: {
+        demo: ["#"],
+        source: ["https://github.com/AndrewAttemptsCode/portfolio-client", "https://github.com/AndrewAttemptsCode/portfolio-server"],
+      },
+      description: [
+        "My portfolio website is a React-based application styled with Styled Components, where visitors can explore my projects, view details that update dynamically when selected, and send me a message through the contact form.",
+        "Interactivity is handled using modern web tools, making the app fast and responsive.",
+        "The backend is powered by an Express server, which uses Nodemailer to securely deliver contact form submissions to my email."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components", "Vite"],
+        backend: ["Node.js", "Express"],
+        tools: ["Git", "GitHub", "VS Code", "Railway", "Cloudflare Pages", "EsLint", "Prettier"],
+        testing: [],
+      },
+    },
     {
       title: "Messenger Chat App",
       image: messengerApp,
@@ -68,6 +88,8 @@ const projects = {
         testing: [],
       },
     },
+  ],
+  archive: [
     {
       title: "File Storage App",
       image: fileStorageApp,
@@ -87,8 +109,6 @@ const projects = {
         testing: [],
       },
     },
-  ],
-  archive: [
     {
       title: "Photo Tagger",
       image: photoTaggingApp,
