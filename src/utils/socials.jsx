@@ -19,7 +19,7 @@ const socials = [
   },
   {
     name: "Resume",
-    url: "#",
+    url: "https://drive.google.com/file/d/1dJ1fNFXBwB1sdqk_rlAr4Y7Va_Td2UEV/view",
     icon: <FileText />
   },
 ];
