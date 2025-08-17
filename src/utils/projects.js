@@ -30,7 +30,7 @@ const projects = {
       title: "Portfolio App",
       image: portfolioApp,
       links: {
-        demo: ["#"],
+        demo: ["https://andrewtravis.uk"],
         source: ["https://github.com/AndrewAttemptsCode/portfolio-client", "https://github.com/AndrewAttemptsCode/portfolio-server"],
       },
       description: [
