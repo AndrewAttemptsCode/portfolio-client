@@ -23,9 +23,32 @@ import rockPaperScissorsApp from "../assets/rockpaperscissors_app.webp";
 import landingPageApp from "../assets/landingpage_app.webp";
 import recipesApp from "../assets/recipes_app.webp";
 import portfolioApp from "../assets/portfolio_app.webp";
+import clickerApp from "../assets/clicker_app.webp";
 
 const projects = {
   featured: [
+    {
+      title: "The Clicker App",
+      image: clickerApp,
+      links: {
+        demo: ["https://the-clicker.pages.dev/"],
+        source: ["https://github.com/AndrewAttemptsCode/the-clicker"],
+      },
+      description: [
+        "The Clicker is a React application built to practice TypeScript, focusing on type inference as well as explicit typing for functional component props and styled-components prop interpolations.",
+        "It features a responsive interface styled with Styled Components, where clicking the main button increments a counter.",
+        "Additional buttons unlock every 100 clicks (up to 600), allowing players to increase the count more quickly while exploring the app’s interactive behaviour."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components"],
+        backend: [],
+        buildTools: ["TypeScript", "Vite"],
+        testing: ["Vitest"],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Cloudflare Pages"],
+        tools: ["VS Code", "Prettier"],
+      },
+    },
     {
       title: "Portfolio App",
       image: portfolioApp,
@@ -39,10 +62,13 @@ const projects = {
         "The backend is powered by an Express server, which uses Nodemailer to securely deliver contact form submissions to my email."
       ],
       techstack: {
-        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components", "Vite"],
+        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components"],
         backend: ["Node.js", "Express"],
-        tools: ["Git", "GitHub", "VS Code", "Railway", "Cloudflare Pages", "EsLint", "Prettier"],
+        buildTools: ["Vite"],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Railway", "Cloudflare Pages"],
+        tools: ["VS Code", "Prettier"],
       },
     },
     {
@@ -59,10 +85,13 @@ const projects = {
         "Live message updates are not supported — users will need to refresh the page to see new messages."
       ],
       techstack: {
-        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components", "Vite"],
+        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components"],
         backend: ["Node.js", "Express", "PostgreSQL", "Prisma", "Passport.js"],
-        tools: ["Git", "GitHub", "VS Code", "Railway", "Cloudflare Pages", "EsLint", "Prettier"],
+        buildTools: ["Vite"],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Railway", "Cloudflare Pages"],
+        tools: ["VS Code", "Prettier"],
       },
     },
     {
@@ -82,10 +111,13 @@ const projects = {
         "User login is securely managed by a server, with all data stored in a structured database that is easy to maintain and expand."
       ],
       techstack: {
-        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components", "Vite"],
+        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components"],
         backend: ["Node.js", "Express", "PostgreSQL", "Prisma", "Passport.js"],
-        tools: ["Git", "GitHub", "VS Code", "Railway", "Cloudflare Pages", "EsLint", "Prettier"],
+        buildTools: ["Vite"],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Railway", "Cloudflare Pages"],
+        tools: ["VS Code", "Prettier"],
       },
     },
   ],
