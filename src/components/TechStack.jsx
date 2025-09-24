@@ -17,8 +17,11 @@ const TechStack = () => {
         <h2>Technology Stack</h2>
         <TechStackGroup categoryTitle="Front End" category="frontend" />
         <TechStackGroup categoryTitle="Back End" category="backend" />
+        <TechStackGroup categoryTitle="Build Tools" category="buildTools" />
         <TechStackGroup categoryTitle="Testing" category="testing" />
-        <TechStackGroup categoryTitle="Tools & Hosting" category="tools" />
+        <TechStackGroup categoryTitle="Version Control" category="versionControl" />
+        <TechStackGroup categoryTitle="Hosting" category="hosting" />
+        <TechStackGroup categoryTitle="Tools" category="tools" />
       </TechStackContainer>
     </TechStackStyle>
   );
