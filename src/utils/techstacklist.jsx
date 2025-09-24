@@ -31,21 +31,6 @@ const techstacklist = {
       title: "Styled Components",
       url: "https://styled-components.com/",
       icon: <SiStyledcomponents />
-    },
-    {
-      title: "Vite",
-      url: "https://vitejs.dev/",
-      icon: <TbBrandVite />
-    },
-    {
-      title: "Webpack",
-      url: "https://webpack.js.org/",
-      icon: <SiWebpack />
-    },
-    {
-      title: "TypeScript",
-      url: "https://www.typescriptlang.org/",
-      icon: <SiTypescript />
     }
   ],
   backend: [
@@ -80,41 +65,21 @@ const techstacklist = {
       icon: <ImEmbed2 />
     }
   ],
-  tools: [
+  buildTools: [
     {
-      title: "Git",
-      url: "https://git-scm.com/",
-      icon: <FaGitAlt />
+      title: "TypeScript",
+      url: "https://www.typescriptlang.org/",
+      icon: <SiTypescript />
     },
     {
-      title: "GitHub",
-      url: "https://github.com/",
-      icon: <FaGithub />
+      title: "Vite",
+      url: "https://vitejs.dev/",
+      icon: <TbBrandVite />
     },
     {
-      title: "Railway",
-      url: "https://railway.app/",
-      icon: <SiRailway />
-    },
-    {
-      title: "VS Code",
-      url: "https://code.visualstudio.com/",
-      icon: <VscVscode />
-    },
-    {
-      title: "EsLint",
-      url: "https://eslint.org/",
-      icon: <SiEslint />
-    },
-    {
-      title: "Prettier",
-      url: "https://prettier.io/",
-      icon: <SiPrettier />
-    },
-    {
-      title: "Cloudflare Pages",
-      url: "https://pages.cloudflare.com/",
-      icon: <SiCloudflarepages />
+      title: "Webpack",
+      url: "https://webpack.js.org/",
+      icon: <SiWebpack />
     }
   ],
   testing: [
@@ -132,6 +97,47 @@ const techstacklist = {
       title: "SuperTest",
       url: "https://github.com/visionmedia/supertest",
       icon: null
+    }
+  ],
+  versionControl: [
+    {
+      title: "Git",
+      url: "https://git-scm.com/",
+      icon: <FaGitAlt />
+    },
+    {
+      title: "GitHub",
+      url: "https://github.com/",
+      icon: <FaGithub />
+    }
+  ],
+  hosting: [
+    {
+      title: "Cloudflare Pages",
+      url: "https://pages.cloudflare.com/",
+      icon: <SiCloudflarepages />
+    },
+    {
+      title: "Railway",
+      url: "https://railway.app/",
+      icon: <SiRailway />
+    }
+  ],
+  tools: [
+    {
+      title: "VS Code",
+      url: "https://code.visualstudio.com/",
+      icon: <VscVscode />
+    },
+    {
+      title: "EsLint",
+      url: "https://eslint.org/",
+      icon: <SiEslint />
+    },
+    {
+      title: "Prettier",
+      url: "https://prettier.io/",
+      icon: <SiPrettier />
     }
   ]
 }
