@@ -137,8 +137,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript"],
         backend: ["Node.js", "Express", "PostgreSQL", "Prisma", "Passport.js", "EJS"],
-        tools: ["Git", "GitHub", "VS Code", "Railway", "EsLint", "Prettier"],
+        buildTools: [],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Railway"],
+        tools: ["VS Code", "Prettier"],
       },
     },
     {
@@ -157,8 +160,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components", "Vite"],
         backend: ["Node.js", "Express", "PostgreSQL", "Prisma"],
-        tools: ["Git", "GitHub", "VS Code", "Railway", "Cloudflare Pages", "EsLint", "Prettier"],
+        buildTools: [],
         testing: ["Jest", "SuperTest"],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Railway", "Cloudflare Pages"],
+        tools: ["VS Code", "Prettier"],
       },
     },
     {
@@ -176,8 +182,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript"],
         backend: ["Node.js", "Express", "PostgreSQL", "EJS", "Passport.js"],
-        tools: ["Git", "GitHub", "VS Code", "Railway", "EsLint", "Prettier"],
+        buildTools: [],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Railway"],
+        tools: ["VS Code", "Prettier"],
       },
     },
     {
@@ -196,8 +205,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript"],
         backend: ["Node.js", "Express", "PostgreSQL", "EJS"],
-        tools: ["Git", "GitHub", "VS Code", "Railway", "EsLint", "Prettier"],
+        buildTools: [],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Railway"],
+        tools: ["VS Code", "Prettier"],
       },
     },
     {
@@ -215,8 +227,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript"],
         backend: ["Node.js", "Express", "PostgreSQL", "EJS"],
-        tools: ["Git", "GitHub", "VS Code", "Railway", "EsLint", "Prettier"],
+        buildTools: [],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Railway"],
+        tools: ["VS Code", "Prettier"],
       },
     },
     {
@@ -231,10 +246,13 @@ const projects = {
         "Interactivity is handled using modern web tools, making the app fast and responsive."
       ],
       techstack: {
-        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components", "Vite"],
+        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code", "EsLint", "Prettier"],
+        buildTools: ["Vite"],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Cloudflare Pages"],
+        tools: ["VS Code", "Prettier"],
       },
     },
     {
@@ -249,10 +267,13 @@ const projects = {
         "Images for the cards are fetched from an online source, making the game visually engaging and unique every time it’s played."
       ],
       techstack: {
-        frontend: ["HTML", "CSS", "JavaScript", "React", "Vite"],
+        frontend: ["HTML", "CSS", "JavaScript", "React"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code", "EsLint", "Prettier"],
+        buildTools: ["Vite"],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Cloudflare Pages"],
+        tools: ["VS Code", "Prettier"],
       },
     },
     {
@@ -270,8 +291,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript", "React", "Vite"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code", "EsLint", "Prettier"],
+        buildTools: ["Vite"],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Cloudflare Pages"],
+        tools: ["VS Code", "Prettier"],
       },
     },
     {
@@ -288,8 +312,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code"],
+        buildTools: [],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: [],
+        tools: ["VS Code"],
       },
     },
     {
@@ -304,10 +331,13 @@ const projects = {
         "Built step-by-step with tests to make sure the game logic works perfectly, then finished with an interface for playing directly in the browser."
       ],
       techstack: {
-        frontend: ["HTML", "CSS", "JavaScript", "Webpack"],
+        frontend: ["HTML", "CSS", "JavaScript"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code"],
+        buildTools: ["Webpack"],
         testing: ["Jest"],
+        versionControl: ["Git", "GitHub"],
+        hosting: [],
+        tools: ["VS Code"],
       },
     },
     {
@@ -323,10 +353,13 @@ const projects = {
         "Powered by live weather data from an external API, the app fetches and displays the latest information instantly, making it quick and easy to check the forecast."
       ],
       techstack: {
-        frontend: ["HTML", "CSS", "JavaScript", "Webpack"],
+        frontend: ["HTML", "CSS", "JavaScript"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code", "EsLint", "Prettier"],
+        buildTools: ["Webpack"],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: [],
+        tools: ["VS Code", "Prettier"],
       },
     },
     {
@@ -341,10 +374,13 @@ const projects = {
         "The app saves your projects and tasks in your browser’s storage, so your list stays intact even after refreshing the page."
       ],
       techstack: {
-        frontend: ["HTML", "CSS", "JavaScript", "Webpack"],
+        frontend: ["HTML", "CSS", "JavaScript"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code"],
+        buildTools: ["Webpack"],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: [],
+        tools: ["VS Code"],
       },
     },
     {
@@ -359,10 +395,13 @@ const projects = {
         "Users can switch between sections using tabbed navigation, and the content updates instantly without reloading the page."
       ],
       techstack: {
-        frontend: ["HTML", "CSS", "JavaScript", "Webpack"],
+        frontend: ["HTML", "CSS", "JavaScript"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code"],
+        buildTools: ["Webpack"],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: [],
+        tools: ["VS Code"],
       },
     },
     {
@@ -379,8 +418,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code"],
+        buildTools: [],
         testing: [],
+        versionControl: [],
+        hosting: [],
+        tools: ["Git", "GitHub", "VS Code"],
       },
     },
     {
@@ -397,8 +439,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code"],
+        buildTools: [],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: [],
+        tools: ["VS Code"],
       },
     },
     {
@@ -414,8 +459,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code"],
+        buildTools: [],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: [],
+        tools: ["VS Code"],
       },
     },
     {
@@ -432,8 +480,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code"],
+        buildTools: [],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: [],
+        tools: ["VS Code"],
       },
     },
     {
@@ -449,8 +500,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code"],
+        buildTools: [],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: [],
+        tools: ["VS Code"],
       },
     },
     {
@@ -467,8 +521,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code"],
+        buildTools: [],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: [],
+        tools: ["VS Code"],
       },
     },
     {
@@ -484,8 +541,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS", "JavaScript"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code"],
+        buildTools: [],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: [],
+        tools: ["VS Code"],
       },
     },
     {
@@ -501,8 +561,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code"],
+        buildTools: [],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: [],
+        tools: ["VS Code"],
       },
     },
     {
@@ -519,8 +582,11 @@ const projects = {
       techstack: {
         frontend: ["HTML", "CSS"],
         backend: [],
-        tools: ["Git", "GitHub", "VS Code"],
+        buildTools: [],
         testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: [],
+        tools: ["VS Code"],
       },
     },
   ]
