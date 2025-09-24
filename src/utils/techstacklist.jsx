@@ -1,7 +1,7 @@
 import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import { ImEmbed2 } from "react-icons/im";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiCloudflarepages, SiEslint, SiExpress, SiJest, SiPassport, SiPostgresql, SiPrettier, SiPrisma, SiRailway, SiStyledcomponents, SiVitest, SiWebpack } from "react-icons/si";
+import { SiCloudflarepages, SiEslint, SiExpress, SiJest, SiPassport, SiPostgresql, SiPrettier, SiPrisma, SiRailway, SiStyledcomponents, SiTypescript, SiVitest, SiWebpack } from "react-icons/si";
 import { TbBrandVite } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 
@@ -42,6 +42,11 @@ const techstacklist = {
       url: "https://webpack.js.org/",
       icon: <SiWebpack />
     },
+    {
+      title: "TypeScript",
+      url: "https://www.typescriptlang.org/",
+      icon: <SiTypescript />
+    }
   ],
   backend: [
     {
