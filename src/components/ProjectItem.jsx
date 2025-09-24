@@ -190,8 +190,11 @@ const ProjectItem = ({ projectIndex, projectType, stackExpanded, toggleStackExpa
         <TechStackWrapper>
           <TechStackGroup categoryTitle="Front End" category="frontend" project={project.techstack.frontend} />
           <TechStackGroup categoryTitle="Back End" category="backend" project={project.techstack.backend} />
+          <TechStackGroup categoryTitle="Build Tools" category="buildTools" project={project.techstack.buildTools} />
           <TechStackGroup categoryTitle="Testing" category="testing" project={project.techstack.testing} />
-          <TechStackGroup categoryTitle="Tools & Hosting" category="tools" project={project.techstack.tools} />
+          <TechStackGroup categoryTitle="Version Control" category="versionControl" project={project.techstack.versionControl} />
+          <TechStackGroup categoryTitle="Hosting" category="hosting" project={project.techstack.hosting} />
+          <TechStackGroup categoryTitle="Tools" category="tools" project={project.techstack.tools} />
         </TechStackWrapper>
         }
       </>
