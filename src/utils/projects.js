@@ -24,9 +24,32 @@ import landingPageApp from "../assets/landingpage_app.webp";
 import recipesApp from "../assets/recipes_app.webp";
 import portfolioApp from "../assets/portfolio_app.webp";
 import clickerApp from "../assets/clicker_app.webp";
+import workoutApp from "../assets/workout_app.webp";
 
 const projects = {
   featured: [
+    {
+      title: "Workout App",
+      image: workoutApp,
+      links: {
+        demo: ["https://workout-app-511.pages.dev/"],
+        source: ["https://github.com/AndrewAttemptsCode/workout-app"],
+      },
+      description: [
+        "Storm Lifts is a web-based workout application built to practice and showcase front-end development skills — including React, TypeScript, accessibility, testing, and responsive design.",
+        "The idea came from my own workouts: I kept losing track of which set I was on during each exercise. This app solves that problem by tracking everything for you — you can create exercises, build workouts, and run them using a built-in timer.",
+        "The app uses LocalStorage to store all workout data, providing a convenient offline experience with no need for an internet connection after the app is loaded."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components"],
+        backend: [],
+        buildTools: ["TypeScript", "Vite"],
+        testing: ["Vitest"],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Cloudflare Pages"],
+        tools: ["VS Code"],
+      },
+    },
     {
       title: "The Clicker App",
       image: clickerApp,
@@ -72,29 +95,6 @@ const projects = {
       },
     },
     {
-      title: "Messenger Chat App",
-      image: messengerApp,
-      links: {
-        demo: ["https://odin-messaging-app-client.pages.dev/"],
-        source: ["https://github.com/AndrewAttemptsCode/odin-messaging-app-client", "https://github.com/AndrewAttemptsCode/odin-messaging-app-server"],
-      },
-      description: [
-        "A messaging app where users can create accounts, send messages to each other, and customize their profiles.",
-        "Interactivity is handled using modern web tools, making the app fast and responsive.",
-        "User login is securely managed by a server, with all data stored in a structured database that is easy to maintain and expand.",
-        "Live message updates are not supported — users will need to refresh the page to see new messages."
-      ],
-      techstack: {
-        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components"],
-        backend: ["Node.js", "Express", "PostgreSQL", "Prisma", "Passport.js"],
-        buildTools: ["Vite"],
-        testing: [],
-        versionControl: ["Git", "GitHub"],
-        hosting: ["Railway", "Cloudflare Pages"],
-        tools: ["VS Code", "Prettier"],
-      },
-    },
-    {
       title: "Blog App",
       image: blogApp,
       links: {
@@ -122,6 +122,29 @@ const projects = {
     },
   ],
   archive: [
+    {
+      title: "Messenger Chat App",
+      image: messengerApp,
+      links: {
+        demo: ["https://odin-messaging-app-client.pages.dev/"],
+        source: ["https://github.com/AndrewAttemptsCode/odin-messaging-app-client", "https://github.com/AndrewAttemptsCode/odin-messaging-app-server"],
+      },
+      description: [
+        "A messaging app where users can create accounts, send messages to each other, and customize their profiles.",
+        "Interactivity is handled using modern web tools, making the app fast and responsive.",
+        "User login is securely managed by a server, with all data stored in a structured database that is easy to maintain and expand.",
+        "Live message updates are not supported — users will need to refresh the page to see new messages."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript", "React", "Styled Components"],
+        backend: ["Node.js", "Express", "PostgreSQL", "Prisma", "Passport.js"],
+        buildTools: ["Vite"],
+        testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Railway", "Cloudflare Pages"],
+        tools: ["VS Code", "Prettier"],
+      },
+    },
     {
       title: "File Storage App",
       image: fileStorageApp,
