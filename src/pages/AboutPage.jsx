@@ -35,19 +35,16 @@ const AboutPage = () => {
       <AboutStyle>
         <ResponsiveContainer>
           <p>
-            Hello, I'm Andrew — a full stack web developer who enjoys building user-focused applications that are both functional and visually engaging.
+            Hello, I'm Andrew — a frontend-focused web developer passionate about building user-first applications that are both functional and visually engaging.
           </p>
           <p>
-            Before stepping into tech, I worked in the online safety space as an Investigations Specialist, ensuring platform communities stayed safe and welcoming. It was challenging, high-responsibility work that taught me how to analyse problems, think critically, and make well-informed decisions. While I’m grateful for those skills, I realised my true passion lay in creating and building, not enforcing and investigating — so I made the leap into web development.
+            Before stepping into tech, I worked in online safety as an Investigations Specialist, ensuring platform communities stayed safe and welcoming. That experience taught me how to analyse problems, think critically, and make well-informed decisions — skills I now bring to solving development challenges.
           </p>
           <p>
-            Since then, I’ve immersed myself in the world of modern web technologies, from React and JavaScript on the frontend to Node.js and PostgreSQL on the backend. I’ve built custom portfolio projects, experimented with UI/UX design principles, and developed a deep appreciation for writing clean, maintainable code that scales.
+            Since transitioning into web development, I’ve immersed myself in modern frontend technologies, particularly React and JavaScript, while exploring UI/UX design, accessibility, and clean, maintainable code. I enjoy breaking complex problems into manageable steps and experimenting creatively to deliver elegant, performant solutions.
           </p>
           <p>
-            My approach to development is shaped by my analytical background — I like to break down complex challenges into manageable steps, while still leaving room for creative experimentation. Whether it’s optimising performance, or improving accessibility, I’m always aiming for solutions that are both elegant and effective.
-          </p>
-          <p>
-            Looking ahead, I’m excited to work with teams and clients who share my passion for creating thoughtful, user-first applications. I’m ready to bring both my creative drive and analytical mindset to the next challenge.
+            Looking ahead, I’m eager to work with teams and clients who value thoughtful, user-focused design. I’m ready to bring both my analytical mindset and creative drive to every project, crafting interfaces that are as engaging as they are effective.
           </p>
         </ResponsiveContainer>
       </AboutStyle>
