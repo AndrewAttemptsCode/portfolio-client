@@ -1,7 +1,8 @@
 import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import { ImEmbed2 } from "react-icons/im";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiCloudflarepages, SiEslint, SiExpress, SiJest, SiPassport, SiPostgresql, SiPrettier, SiPrisma, SiRailway, SiStyledcomponents, SiTypescript, SiVitest, SiWebpack } from "react-icons/si";
+import { PiTestTube } from "react-icons/pi";
+import { SiCloudflarepages, SiContentful, SiEslint, SiExpress, SiJest, SiPassport, SiPostgresql, SiPrettier, SiPrisma, SiRailway, SiStyledcomponents, SiTailwindcss, SiTypescript, SiVitest, SiWebpack } from "react-icons/si";
 import { TbBrandVite } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 
@@ -31,6 +32,11 @@ const techstacklist = {
       title: "Styled Components",
       url: "https://styled-components.com/",
       icon: <SiStyledcomponents />
+    },
+    {
+      title: "Tailwind CSS",
+      url: "https://tailwindcss.com/",
+      icon: <SiTailwindcss />
     }
   ],
   backend: [
@@ -96,7 +102,7 @@ const techstacklist = {
     {
       title: "SuperTest",
       url: "https://github.com/visionmedia/supertest",
-      icon: null
+      icon: <PiTestTube />
     }
   ],
   versionControl: [
@@ -138,6 +144,11 @@ const techstacklist = {
       title: "Prettier",
       url: "https://prettier.io/",
       icon: <SiPrettier />
+    },
+    {
+      title: "Contentful",
+      url: "https://www.contentful.com/",
+      icon: <SiContentful />
     }
   ]
 }
