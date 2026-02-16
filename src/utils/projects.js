@@ -25,9 +25,32 @@ import recipesApp from "../assets/recipes_app.webp";
 import portfolioApp from "../assets/portfolio_app.webp";
 import clickerApp from "../assets/clicker_app.webp";
 import workoutApp from "../assets/workout_app.webp";
+import postyApp from "../assets/posty_app.webp";
 
 const projects = {
   featured: [
+    {
+      title: "Posty CMS App",
+      image: postyApp,
+      links: {
+        demo: ["https://posts-headless-cms.pages.dev/"],
+        source: ["https://github.com/AndrewAttemptsCode/posts-headless-cms"],
+      },
+      description: [
+        "Posty is a headless CMS web app built to showcase front-end skills — including React, TypeScript, client-side routing, API integration, and responsive, accessible design.",
+        "It displays the latest posts from a Contentful API and lets users navigate to individual articles. Selecting a post uses client-side routing, while direct URL slugs dynamically fetch and render the correct content.",
+        "The app demonstrates modern front-end architecture with a decoupled data flow: API → custom hooks → components. Tailwind CSS ensures responsive, accessible, and maintainable interfaces."
+      ],
+      techstack: {
+        frontend: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
+        backend: [],
+        buildTools: ["TypeScript", "Vite"],
+        testing: [],
+        versionControl: ["Git", "GitHub"],
+        hosting: ["Cloudflare Pages"],
+        tools: ["VS Code", "Prettier", "Contentful"],
+      },
+    },
     {
       title: "Workout App",
       image: workoutApp,
@@ -94,6 +117,8 @@ const projects = {
         tools: ["VS Code", "Prettier"],
       },
     },
+  ],
+  archive: [
     {
       title: "Blog App",
       image: blogApp,
@@ -120,8 +145,6 @@ const projects = {
         tools: ["VS Code", "Prettier"],
       },
     },
-  ],
-  archive: [
     {
       title: "Messenger Chat App",
       image: messengerApp,
