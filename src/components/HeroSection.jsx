@@ -6,7 +6,6 @@ const HeroStyle = styled.section`
   background-color: rgba(var(--primary-color), 0.06);
   min-height: 30vh;
   min-height: 30dvh;
-
 `
 
 const ResponsiveContainer = styled.div`
@@ -34,9 +33,9 @@ const HeroSection = () => {
     <HeroStyle>
       <ResponsiveContainer>
         <h2>Andrew Travis</h2>
-        <p>Full-Stack Web Developer</p>
+        <p>Frontend-Focused Full-Stack Web Developer</p>
         <p>Manchester, England</p>
-        <p>React • Node.js • Express • PostgreSQL • Prisma</p>
+        <p>React • TypeScript • JavaScript • Node.js • PostgreSQL • UI/UX • Accessibility</p>
         <SocialsLinks />
       </ResponsiveContainer>
     </HeroStyle>
