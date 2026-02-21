@@ -8,7 +8,7 @@ const FooterStyle = styled.footer`
 `
 
 const ResponsiveContainer = styled.div`
-  width: min(80%, 1280px);
+  width: min(90%, 1280px);
   margin: 0 auto;
 `
 
