@@ -9,7 +9,7 @@ const HeroStyle = styled.section`
 `
 
 const ResponsiveContainer = styled.div`
-  width: min(80%, 1280px);
+  width: min(90%, 1280px);
   margin: 0 auto;
   text-align: center;
   min-height: inherit;
@@ -26,6 +26,14 @@ const ResponsiveContainer = styled.div`
   p:last-of-type {
     margin: 1rem 0;
   }
+
+  p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+  p:first-of-type span {
+    display: block;
+  }
 `
 
 const HeroSection = () => {
@@ -33,7 +41,10 @@ const HeroSection = () => {
     <HeroStyle>
       <ResponsiveContainer>
         <h2>Andrew Travis</h2>
-        <p>Frontend-Focused Full-Stack Web Developer</p>
+        <p>
+          <span>Frontend-Focused</span>
+          <span>Full-Stack Web Developer</span>
+        </p>
         <p>Manchester, England</p>
         <p>React • TypeScript • JavaScript • Node.js • PostgreSQL • UI/UX • Accessibility</p>
         <SocialsLinks />
